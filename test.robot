@@ -103,7 +103,7 @@ Change Portal
 
 Nas Create Flow Domestic
     Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 19/6    10000    12    Stocklots    juli    100    12 
-    Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    Testnr    19-07-2023
+    # Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    Testnr    19-07-2023
 
 NAS Create Flow Direct Import
     Start Onboarding NAS Create DI    buyerdev    xGk<6Of    Mattel Brands    Test Automation 19/6    10000    11    Stocklots    juli    100    12

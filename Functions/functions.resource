@@ -87,19 +87,21 @@ Click Calender New Widget
 
 Fill EAN
     [Arguments]    ${EAN} 
-    Fill Text    (//li[contains(@class, "mx-name-index-0")]//child::input)[1]    ${EAN}    
-    Fill Text    (//li[contains(@class, "mx-name-index-0")]//child::input)[2]    Test 
+    Wait for x seconds    2s
+    Fill Text    (//label[text() = "EAN Code*"]//following::input)[1]    ${EAN}    
+    Fill Text    (//label[text() = "EAN Code*"]//following::input)[2]    Test 
 
 Fill Random EAN
-    ${EAN}    FakerLibrary.Ean 13      
-    Fill Text    (//li[contains(@class, "mx-name-index-0")]//child::input)[1]    ${EAN}    
-    Fill Text    (//li[contains(@class, "mx-name-index-0")]//child::input)[2]    Test 
+    ${EAN}    FakerLibrary.Ean 13   
+    Wait for x seconds    2s   
+    Fill Text    (//label[text() = "EAN Code*"]//following::input)[1]    ${EAN}
+    Fill Text    (//label[text() = "EAN Code*"]//following::input)[2]    Test 
     
 Fill Product Description
     [Arguments]    ${label}    ${input}    
     Fill Text    (//label[text() = "${label}"]/following::textarea[1])    ${input}
 
-Click Brick           
+Click Brick        
     Click    //div[contains(@class, "col-lg-auto col-md col")]//child::button
     Wait for x seconds    1s
     Click    //div[text() = "10000449 (Eerste Hulp – Accessoires)"]

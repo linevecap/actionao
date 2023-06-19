@@ -13,6 +13,7 @@ Buying Enrichment
     [Arguments]    ${Username}    ${Password}    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
     ...    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
 
+    Go to the Dev environment
     Login with    ${Username}    ${Password}
     Task Inbox    Buying Article Enrichment
     Click Brick
