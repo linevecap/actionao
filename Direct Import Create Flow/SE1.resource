@@ -1,0 +1,45 @@
+*** Settings ***
+
+Library    Browser
+Library    FakerLibrary
+Library    String
+
+Resource    ../Functions/functions.resource
+Resource    ../Homepage/homepage.resource
+
+*** Keywords ***
+
+Supplier Enrichment 1 DI create flow
+    [Arguments]    ${Samples}        ${GrossWeight}    ${NetWeight}
+    ...    ${ContentQty}    ${ContentUnit}    ${FactoryName}    ${FactoryAddress}         
+    ...    ${SupplierArticleNr}    ${GrossWeight}    ${PalletQty}    ${PalletHeight}        ${Materials}
+    ...    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}           
+
+    Login with    sourcingagentdev    5lC(i)R@=9g?
+    # Mendix Task Inbox    2
+    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+    Mendix Dropdown    All samples available*    label    ${Samples}
+    # Fill Text    (//div[contains(@class, "mx-name-textBox10 mx-textbox form-group no-columns")]//child::input)[1]    ${GrossWeight}
+    Mendix Text    Article gross weight (kg)*    ${GrossWeight}
+    Mendix Text    Article net weight (kg)*    ${NetWeight}
+    Wait for x seconds    1s
+    Mendix Text    Article content quantity*    ${ContentQty}    
+    Mendix Dropdown    Article content unit*    label    ${ContentUnit}
+    Language on packaging
+    Wait for x seconds    1s
+    Mendix Click    Select all
+    Wait for x seconds    1s
+    Deselect N/A Language
+    Wait for x seconds    1s
+    Save Language
+    Mendix Text    Factory name*    ${FactoryName}
+    Mendix Text    Factory address*    ${FactoryAddress}       
+    Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
+    Logistics Data DI SE2    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
+    Mendix Click    Add material
+    Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
+    Mendix Click    Submit Enrichment
+    Mendix Click    OK
+    Log out
+
+    Wait for x seconds    10s
