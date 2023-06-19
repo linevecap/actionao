@@ -9,11 +9,15 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Final Check ComOps repeat flow
-    [Arguments]    ${Username}    ${Password}    
+Buyer Approval
+    [Arguments]    ${Username}    ${Password}
 
     Login with    ${Username}    ${Password}
-    Task Inbox    Final Article Check
-    Mendix Click    Approve
+    Task Inbox    Buyer Article Approval
+    Mendix Click    Approve and Release Contract
     Mendix Click    OK
+    Wait for x seconds    2s
     Log out
+
+    Wait for x seconds    10s
+

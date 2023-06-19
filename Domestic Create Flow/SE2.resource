@@ -15,7 +15,7 @@ Supplier Enrichment 2
     
     Login with    ${Username}    ${Password}
     # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+    Task Inbox    Supplier Article Enrichment 2
     Mendix Dropdown    Is MSDS needed yes/no*    label    ${MSDS}
     Mendix Dropdown Extended    HS code*    ${HSCode}
     Logistics Data    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${PalletQty}    ${PalletHeight}             

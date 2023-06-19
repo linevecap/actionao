@@ -20,7 +20,7 @@ Supplier Enrichment NAS Create
     Login with    ${Username}    ${Password}
     # Mendix Task Inbox    2
     Mendix Click    NAS Tasks
-    NAS Task Inbox   Supplier Enrichment 1
+    Task Inbox   Supplier Enrichment 1
     Language on packaging
     Wait for x seconds    1s
     Mendix Click    Select all

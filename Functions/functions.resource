@@ -17,7 +17,6 @@ Mendix Click
 Mendix Dropdown
     [Arguments]    ${label}    ${attribute}    ${value}    
     Select Options By    (//label[text() = "${label}"]/following::select)[1]   ${attribute}    ${value}     
-    # Fill Text    (//label[text() = "${label}"]/following::input[1])[${occurrence}]    ${input}
 
 Mendix Dropdown Extended
     [Arguments]    ${label}    ${value}    
@@ -29,32 +28,16 @@ Mendix Task Inbox
     [Arguments]    ${index}
     Click    (//div[@class = "tr"])[${index}]    
 
-NAS Task Inbox
+Task Inbox
     [Arguments]    ${task}
     Click    (//span[text() = "${task}"])[1]
 
 Mendix Click Material  
     [Arguments]    ${materials}    ${specificMaterial}    ${percentage}    ${certificate}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[1]    label    ${materials}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[2]    label    ${specificMaterial}
-    Fill Text    (//li[contains(@class, "index-0")]//child::input)[5]    ${percentage}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[3]    label    ${certificate}
-
-Mendix Click Material QAS  
-    [Arguments]    ${materials}    ${specificMaterial}    ${percentage}    ${certificate}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[1]    label    ${materials}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[2]    label    ${specificMaterial}
-    Fill Text    input.form-control[value='0,0']    ${percentage}
-        # (//li[contains(@class, "index-0")]//child::input)[1]            
-    # (//li[contains(@class, "index-0")]//div[contains(@class, "mx-name-textBox1 mx-textbox form-group no-columns")]//child::input)[1]
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[3]    label    ${certificate}
-
-Mendix Click Material repeat flow
-    [Arguments]    ${materials}    ${specificMaterial}    ${percentage}    ${certificate}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[1]    label    ${materials}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[2]    label    ${specificMaterial}
-    Fill Text    (//li[contains(@class, "index-0")]//child::input)[4]    ${percentage}
-    Select Options By    (//li[contains(@class, "index-0")]//child::select)[3]    label    ${certificate}
+    Select Options By    (//span[text() = "Materials*"]//following::select)[1]    label    ${materials}
+    Select Options By    (//span[text() = "Specific material*"]//following::select)[2]    label    ${specificMaterial}
+    Fill Text    (//span[text() = "% Of article*"]//following::input)[1]    ${percentage}
+    Select Options By    (//span[text() = "Sustainability certificate*"]//following::select)[3]    label    ${certificate}
     
 Upload Picture
     [Arguments]    ${path}
@@ -81,23 +64,18 @@ Save Language
     Click    button.mx-name-selectButton1
     
 Deselect N/A Language
-    Click    tr.mx-name-index-6
-    # Click    tr.mx-name-index-5
-    # Click    tr.mx-name-index-4
+    Click    //div[text() = "N/A"]
 
 Deselect N/A Language QAS
-    Click    tr.mx-name-index-7
+    Click    //div[text() = "N/A"]
 
 Click Calender
     [Arguments]    ${date}
-    # Click    //div[contains(@class, "mx-name-datePicker1")]//following::button
     Click    .glyphicon-calendar
-    # Click    //button[contains(@class, "mx-calendar-month-next")]//child::span
     Click    [aria-label='${date}']
 
 Click Calender 2
     [Arguments]    ${date}
-    # Click    //div[contains(@class, "mx-name-datePicker1")]//following::button
     Click    .glyphicon-calendar
     Click    //button[contains(@class, "mx-calendar-month-next")]//child::span
     Click    [aria-label='${date}']
@@ -123,112 +101,105 @@ Fill Product Description
 
 Click Brick           
     Click    //div[contains(@class, "col-lg-auto col-md col")]//child::button
-    Click    (//li[contains(@class, "mx-name-index-0")]//div[contains(@class, "mx-name-textBox2")])[2]
-    # Click    (//li[contains(@class, "mx-name-index-0")])[4]
+    Wait for x seconds    1s
+    Click    //div[text() = "10000449 (Eerste Hulp – Accessoires)"]
 
 Selling Price
     [Arguments]    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
     ...    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[1]    ${PriceNL}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[3]    ${PriceBE-VL}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[5]    ${PriceBE-WL}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[7]    ${PricDE}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[9]    ${PricFR}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[11]   ${PricLU}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[13]    ${PricAT}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[19]    ${PriceIT}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[21]    ${PriceES}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[23]    ${PriceSK}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[25]    ${PricePT}
+    Fill Text    (//div[text() = "NL"]//following::input)[1]    ${PriceNL}
+    Fill Text    (//div[text() = "BE-VL"]//following::input)[1]    ${PriceBE-VL}
+    Fill Text    (//div[text() = "BE-WL"]//following::input)[1]    ${PriceBE-WL}
+    Fill Text    (//div[text() = "DE"]//following::input)[1]    ${PricDE}
+    Fill Text    (//div[text() = "FR"]//following::input)[1]    ${PricFR}
+    Fill Text    (//div[text() = "LU"]//following::input)[1]   ${PricLU}
+    Fill Text    (//div[text() = "AT"]//following::input)[1]    ${PricAT}
+    Fill Text    (//div[text() = "IT"]//following::input)[1]    ${PriceIT}
+    Fill Text    (//div[text() = "ES"]//following::input)[1]    ${PriceES}
+    Fill Text    (//div[text() = "SK"]//following::input)[1]    ${PriceSK}
+    Fill Text    (//div[text() = "PT"]//following::input)[1]    ${PricePT}
     Wait for x seconds    1s
-
-Selling Price QAS
-    [Arguments]    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
-    ...    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[2]    ${PriceNL}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[5]    ${PriceBE-VL}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[8]    ${PriceBE-WL}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[10]    ${PricDE}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[12]    ${PricFR}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[14]   ${PricLU}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[16]    ${PricAT}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[22]    ${PriceIT}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[24]    ${PriceES}
-    Fill Text    (//div[contains(@class, "mx-dataview mx-name-dataView5 form-horizontal")]//following::input)[26]    ${PriceSK}
-    Wait for x seconds    1s    
 
 Logistics Data
     [Arguments]    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}    
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[1]    ${CartonQty}
+    Fill Text    (//span[text() = "Quantity* (PC, max 50, no decimal):"]//following::input)[1]    ${CartonQty}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[2]    ${GrossWeight}
+    Fill Text    (//span[text() = "Gross weight* (KG, max 15, max 3 decimals):"]//following::input)[1]    ${GrossWeight}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[3]    ${BoxLength}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${BoxLength}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[4]    ${BoxWidth}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[2]    ${BoxWidth}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[5]    ${BoxHeigth}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${BoxHeigth}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[11]    ${PalletQty}
+    Fill Text    (//span[text() = "Quantity*  (PC) (no decimals):"]//following::input)[1]    ${PalletQty}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[13]    ${PalletHeigth}
+    Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeigth}
+    Wait for x seconds    2s
+
+Logistics Data Repeat
+    [Arguments]    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}    
+    Fill Text    (//span[text() = "Quantity* (PC, max 50, no decimal):"]//following::input)[1]    ${CartonQty}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Gross weight* (KG, max 15, max 3 decimals):"]//following::input)[1]    ${GrossWeight}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${BoxLength}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[2]    ${BoxWidth}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${BoxHeigth}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Quantity* (PC) (no decimals):"]//following::input)[1]    ${PalletQty}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeigth}
     Wait for x seconds    2s
               
 Logistics Data DI Check Quotation
         [Arguments]    ${CartonQty}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${AgreedPalletEff}  
-    Fill Text    //div[contains(@class, "mx-name-container15")]//child::input    ${CartonQty}
+    Fill Text    (//span[text() = "Quantity* (PC, max 50, no decimal):"]//following::input)[1]    ${CartonQty}
     Wait for x seconds    1s
-    Fill Text    //div[contains(@class, "mx-name-container17")]//child::input    ${BoxLength}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${BoxLength}
     Wait for x seconds    1s
-    Fill Text    //div[contains(@class, "mx-name-container18")]//child::input    ${BoxWidth}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[2]    ${BoxWidth}
     Wait for x seconds    1s
-    Fill Text    //div[contains(@class, "mx-name-container19")]//child::input    ${BoxHeight}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${BoxHeight}
     Wait for x seconds    1s
-    Fill Text    //div[contains(@class, "mx-name-container26")]//child::input    ${AgreedPalletEff}
+    Fill Text    (//span[text() = "Agreed pallet efficiency* (%):"]//following::input)[1]    ${AgreedPalletEff}
     Wait for x seconds    2s
 
 Logistics Data DI SE2
     [Arguments]    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
-    Fill Text    //div[contains(@class, "mx-name-container13")]//child::input    ${GrossWeight}
+    Fill Text    (//span[text() = "Gross weight* (KG, max 15, max 3 decimals):"]//following::input)[1]    ${GrossWeight}
     Wait for x seconds    1s
-    Fill Text    //div[contains(@class, "mx-name-container15")]//child::input    ${PalletQty}
+    Fill Text    (//span[text() = "Quantity* (PC) (no decimals):"]//following::input)[1]    ${PalletQty}
     Wait for x seconds    1s
-    Fill Text    //div[contains(@class, "mx-name-container19")]//child::input    ${PalletHeight}
+    Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeight}
     Wait for x seconds    1s        
-
-Logistics Data DI repeat SE2
-    [Arguments]    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//following::input)[2]    ${GrossWeight}
-    Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//following::input)[11]    ${PalletQty}
-    Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//following::input)[13]    ${PalletHeight}
-    Wait for x seconds    1s
 
 Logistics Data Change Request
     [Arguments]    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${InnerQty}    ${InnerWeight}    
     ...    ${InnerBoxLength}    ${InnerBoxWidth}    ${InnerBoxHeight}    ${PalletQty}    ${PalletHeigth}    
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[1]    ${CartonQty}
+    Fill Text    (//span[text() = "Quantity* (PC, max 50, no decimal):"]//following::input)[1]    ${CartonQty}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[2]    ${GrossWeight}
+    Fill Text    (//span[text() = "Gross weight* (KG, max 15, max 3 decimals):"]//following::input)[1]    ${GrossWeight}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[3]    ${BoxLength}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${BoxLength}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[4]    ${BoxWidth}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[2]    ${BoxWidth}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[5]    ${BoxHeigth}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${BoxHeigth}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[6]    ${InnerQty}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${InnerQty}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[7]    ${InnerWeight}
+    Fill Text    (//span[text() = "Gross weight (KG, max 15, max 3 decimals):"]//following::input)[1]    ${InnerWeight}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[8]    ${InnerBoxLength}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${InnerBoxLength}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[9]    ${InnerBoxWidth}
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[2]    ${InnerBoxWidth}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[10]    ${InnerBoxHeight} 
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${InnerBoxHeight} 
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[11]    ${PalletQty}
+    Fill Text    (//span[text() = "Quantity* (PC) (no decimals):"]//following::input)[1]    ${PalletQty}
     Wait for x seconds    1s
-    Fill Text    (//div[contains(@class, "mx-name-container1 article-logistics-data")]//child::input)[13]    ${PalletHeigth}
+    Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeigth}
     Wait for x seconds    2s

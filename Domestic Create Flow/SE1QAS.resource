@@ -48,7 +48,7 @@ Supplier Enrichment 1 QAS
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
     Mendix Click    Add material
-    Mendix Click Material QAS    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
+    Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
     Mendix Click    Submit Enrichment
     Mendix Click    Proceed
     Set Browser Timeout    3s

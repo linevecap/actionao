@@ -26,7 +26,7 @@ Supplier Enrichment 1 repeat flow QAS
     Mendix Dropdown    Is MSDS needed yes/no*    label    ${MSDS}
     # Logistics Data    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth} 
     Mendix Click    Add material
-    Mendix Click Material repeat flow    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
+    Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
     Wait for x seconds    2s
     Mendix Click    Submit Enrichment
     Wait for x seconds    1s

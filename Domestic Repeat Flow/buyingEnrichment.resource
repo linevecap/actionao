@@ -14,8 +14,8 @@ Buying Enrichment repeat flow
     
     Login with    ${Username}    ${Password}
     # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
-    Mendix Click    Approve
+    Task Inbox    Buying Article Enrichment
+    Mendix Click    Ready for Buyer Approval
     Mendix Click    OK
     Log out
 

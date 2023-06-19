@@ -12,7 +12,7 @@ Resource    ../Homepage/homepage.resource
 Final Check ComOps
     [Arguments]    ${Username}    ${Password}    ${Brand}    ${ICPE}    
     Login with    ${Username}    ${Password}    
-    Mendix Task Inbox    2
+    Task Inbox    Final Article Check
     Mendix Dropdown Extended    Brand*    ${Brand}
     Mendix Dropdown    ICPE*    label    ${ICPE}
     Mendix Click    Approve

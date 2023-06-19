@@ -22,9 +22,9 @@ Supplier Enrichment 1 DI repeat flow
     Mendix Dropdown    Is MSDS needed yes/no*    label    ${MSDS}
     Mendix Text    Factory name*    ${FactoryName}
     Mendix Text    Factory address*    ${FactoryAddress}
-    Logistics Data DI repeat SE2    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
+    Logistics Data DI SE2    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
     Mendix Click    Add material
-    Mendix Click Material repeat flow    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
+    Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
     Mendix Click    Submit Enrichment
     Mendix Click    OK
     Log out

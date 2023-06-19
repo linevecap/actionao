@@ -12,14 +12,13 @@ Resource    ../Homepage/homepage.resource
 Supplier Enrichment 1
     [Arguments]    ${Username}    ${Password}    ${Samples}    ${Specification}    ${GrossWeight}    ${NetWeight}
     ...    ${Length}    ${Width}    ${Height}    ${ContentQty}    ${ContentUnit}
-    ...    ${CountryOfProd}
-    # ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}            
+    ...    ${CountryOfProd}      
     ...    ${SupplierArticleNr}    ${SohDate}    ${Materials}
     ...    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}           
 
     Login with    ${Username}    ${Password}
-    # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+
+    Task Inbox    Supplier Article Enrichment
     Mendix Dropdown    All samples available*    label    ${Samples}
     Mendix Click    Add EAN
     Fill Random EAN    
@@ -38,8 +37,8 @@ Supplier Enrichment 1
     Wait for x seconds    1s
     Deselect N/A Language
     Wait for x seconds    1s
-    Save Language
-    # Logistics Data    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}
+    Mendix Click    Save
+    Wait for x seconds    1s
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
     Mendix Click    Add material

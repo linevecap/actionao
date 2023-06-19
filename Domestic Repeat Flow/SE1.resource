@@ -11,19 +11,20 @@ Resource    ../Homepage/homepage.resource
 
 Supplier Enrichment 1 repeat flow
     [Arguments]    ${Username}    ${Password}    ${Samples}    ${Specification}    
-    ...    ${SupplierArticleNr}    ${SohDate}    ${MSDS}    ${Materials}
+    ...    ${SupplierArticleNr}    ${SohDate}    ${MSDS}    
+    ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}    ${Materials}
     ...    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}           
 
     Login with    ${Username}    ${Password}    
-    # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+    Task Inbox    Supplier Article Enrichment
     Mendix Dropdown    All samples available*    label    ${Samples}
     Fill Product Description    Product Specification*    ${Specification}
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
     Mendix Dropdown    Is MSDS needed yes/no*    label    ${MSDS}
+    Logistics Data Repeat    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}
     Mendix Click    Add material
-    Mendix Click Material repeat flow    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
+    Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
     Wait for x seconds    3s
     Mendix Click    Submit Enrichment
     Wait for x seconds    1s
