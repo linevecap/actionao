@@ -14,6 +14,7 @@ Check Quotation DI repeat flow
     ...    ${ImportDuty}    ${AntiDump}    ${FOBPort}    ${ProdDescription}
     ...    ${CartonQty}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${AgreedPalletEff}              
 
+    Go to the Dev environment
     Login with    sourcingagentdev    5lC(i)R@=9g?
     Mendix Click    Create Quotation
     Mendix Text    Article number    ${ArticleNumber}

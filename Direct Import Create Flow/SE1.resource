@@ -16,10 +16,9 @@ Supplier Enrichment 1 DI create flow
     ...    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}           
 
     Login with    sourcingagentdev    5lC(i)R@=9g?
-    # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+
+    Task Inbox    Supplier Article Enrichment
     Mendix Dropdown    All samples available*    label    ${Samples}
-    # Fill Text    (//div[contains(@class, "mx-name-textBox10 mx-textbox form-group no-columns")]//child::input)[1]    ${GrossWeight}
     Mendix Text    Article gross weight (kg)*    ${GrossWeight}
     Mendix Text    Article net weight (kg)*    ${NetWeight}
     Wait for x seconds    1s
@@ -35,7 +34,7 @@ Supplier Enrichment 1 DI create flow
     Mendix Text    Factory name*    ${FactoryName}
     Mendix Text    Factory address*    ${FactoryAddress}       
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
-    Logistics Data DI SE2    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
+    Logistics Data DI SE1    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
     Mendix Click    Add material
     Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
     Mendix Click    Submit Enrichment

@@ -10,21 +10,17 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Review Quotation DI create flow
-    [Arguments]        ${Date}    ${SalesPerWeek}
+    [Arguments]        ${Month}    ${SalesPerWeek}
 # ${AssortmentType}    ${ArticleGroup}    ${MaterialCode}
 
     Login with    buyerdev    xGk<6Of
     # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
-    Click    //label[text() = "Assortment type*"]
-    Press Down
+    Task Inbox    Review Quotation
+    Mendix Dropdown    Assortment type*    label    Stocklots
+    Select Options By    (//label[text() = "Category*"]//following::select)[4]    label    Personal Care
+    Mendix Dropdown    Article group*    label    Health & Other Cosmetics
     Wait for x seconds    1s
-    Click    //label[text() = "Article group*"]
-    Press Down
-    Press Enter
-    Wait for x seconds    1s
-    Click    //label[text() = "Material group code*"]
-    Press Down
+    Mendix Dropdown    Material group*    label    First Aid
     Wait for x seconds    1s
     # Select Options By    (//label[text() = "Assortment type*"]//following::select[1])    index    2    
     # Mendix Dropdown        Assortment type*    label   21955048183431170
@@ -32,7 +28,7 @@ Review Quotation DI create flow
     # Mendix Dropdown    Assortment type*    label    ${AssortmentType}   
     # Mendix Dropdown    Article group*    value    ${ArticleGroup}
     # Mendix Dropdown    Material group code*    value    ${MaterialCode}
-    Click Calender    ${Date}    
+    Click Calender New Widget    ${Month}    
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Wait for x seconds    1s
     Mendix Click    Start Onboarding

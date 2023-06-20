@@ -11,14 +11,14 @@ Resource    ../Homepage/homepage.resource
 
 Buying Enrichment DI create flow
     [Arguments]    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
-    ...    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}
+    ...    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
 
     Login with    buyerdev    xGk<6Of
     # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+    Task Inbox    Buying Article Enrichment
     Click Brick
     Mendix Dropdown    Advertising ban*    label    No
-    Selling Price    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    
+    Selling Price    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}    
     Mendix Click    Approve
     Mendix Click    OK
     Log out

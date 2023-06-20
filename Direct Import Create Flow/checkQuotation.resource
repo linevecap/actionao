@@ -31,7 +31,7 @@ Check Quotation DI create flow
     Mendix Text    Anti dump duty*    ${AntiDump}
     Mendix Dropdown    FOB port*    label    ${FOBPort}
     Mendix Click    Add EAN   
-    Fill Random EAN
+    Fill Random EAN DI
     Fill Product Description    Product specification*    ${ProdDescription}
     Mendix Text    Article length (cm)*    ${Length}
     Mendix Text    Article width (cm)*    ${Width}

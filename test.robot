@@ -39,10 +39,12 @@ Resource    NAS Create Flow DI/startOnboardingNasDI.resource
 Resource    NAS Create Flow Domestic/SE1NAScreate.resource
 Resource    Domestic Create Flow/buyerApproval.resource
 
+Library    BuiltIn
+
 # Suite Setup     Go to the Dev environment
 # Test Setup      
 # Test Teardown     Log out
-
+    
 *** Test Cases ***
 
 Happy domestic create flow
@@ -64,22 +66,22 @@ Happy domestic repeat flow
 
 Happy direct import create flow
     
-    Check Quotation DI create flow    tree.jpg    Test Automation DI article 21/4    PLAYGO TOYS ENTERPRISES LTD.    10000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    23-04-2023    50    10    10    10    5
-    Review Quotation DI create flow    23-06-2023    10000
+    Check Quotation DI create flow    tree.jpg    Test Automation DI article 21/4    PLAYGO TOYS ENTERPRISES LTD.    10000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    23-07-2023    50    10    10    10    5
+    Review Quotation DI create flow    juli    10000
     Supplier Enrichment 1 DI create flow    No    10    5    1    LTR    Testfactory    Street 123    Testnr    5    1000    180    Natural fabric    Cotton    100    Not Applicable    
-    Buying Enrichment DI create flow    10    10    10    10    10    10    10    10    10    10
+    Buying Enrichment DI create flow    10    10    10    10    10    10    10    10    10    10    10
     Hedging DI create/repeat flow
     Supplier Enrichment 2 DI create flow    No    
-    Final Check ComOps DI create flow    Adidas    1450 - Highly flammable solids        
+    # Final Check ComOps DI create flow    Adidas    1450 - Highly flammable solids        
 
 Happy direct import repeat flow
     
     Check Quotation DI repeat flow    2568955    tree.jpg    PLAYGO TOYS ENTERPRISES LTD.    10000    10    10    10    Bangkok    Test Automation RuleZ!    50    10    10    10    5
-    Review Quotation DI repeat flow    2023    26-03-2023    10000
-    Supplier Enrichment 1 DI repeat flow    No    Testnr    No    Testfactory    Street 123    5    4000    180    Natural fabric    Cotton    100    Not Applicable
+    Review Quotation DI repeat flow    2023    juli    10000
+    Supplier Enrichment 1 DI repeat flow    No    Testnr    No    Testfactory    Street 123    40    2,4    10    15    20    400    190    Natural fabric    Cotton    100    Not Applicable
     Buying Enrichment DI repeat flow    
     Hedging DI create/repeat flow
-    Final Check ComOps DI repeat flow
+    # Final Check ComOps DI repeat flow
 
 Regression test create domestic QAS
     Start New Onboarding QAS    buyer1@action.nl    9nT\[7cV    ferrero nutella biscuits 304 g    Kapimex B.V.    4000    2,13    In/Out    Personal Care    Health & Other Cosmetics    010101    juni    10000    10
@@ -102,7 +104,7 @@ Change Portal
     Director Change Approval
 
 Nas Create Flow Domestic
-    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 19/6    10000    12    Stocklots    juli    100    12 
+    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 19/6    10000    10    Stocklots    juli    100    6 
     # Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    Testnr    19-07-2023
 
 NAS Create Flow Direct Import

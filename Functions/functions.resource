@@ -97,6 +97,12 @@ Fill Random EAN
     Fill Text    (//label[text() = "EAN Code*"]//following::input)[1]    ${EAN}
     Fill Text    (//label[text() = "EAN Code*"]//following::input)[2]    Test 
     
+Fill Random EAN DI
+    ${EAN}    FakerLibrary.Ean 13   
+    Wait for x seconds    2s   
+    Fill Text    (//label[text() = "EAN Code"]//following::input)[1]    ${EAN}
+    Fill Text    (//label[text() = "EAN Code"]//following::input)[2]    Test 
+
 Fill Product Description
     [Arguments]    ${label}    ${input}    
     Fill Text    (//label[text() = "${label}"]/following::textarea[1])    ${input}
@@ -169,14 +175,31 @@ Logistics Data DI Check Quotation
     Fill Text    (//span[text() = "Agreed pallet efficiency* (%):"]//following::input)[1]    ${AgreedPalletEff}
     Wait for x seconds    2s
 
-Logistics Data DI SE2
+Logistics Data DI SE1
     [Arguments]    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
     Fill Text    (//span[text() = "Gross weight* (KG, max 15, max 3 decimals):"]//following::input)[1]    ${GrossWeight}
-    Wait for x seconds    1s
-    Fill Text    (//span[text() = "Quantity* (PC) (no decimals):"]//following::input)[1]    ${PalletQty}
+    Wait for x seconds    2s
+    Fill Text    //div[contains(@class, "mx-name-container15")]//child::input    ${PalletQty}
     Wait for x seconds    1s
     Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeight}
     Wait for x seconds    1s        
+
+Logistics Data DI SE1 Repeat
+    [Arguments]    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}    
+    Fill Text    (//span[text() = "Quantity* (PC, max 50, no decimal):"]//following::input)[1]    ${CartonQty}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Gross weight* (KG, max 15, max 3 decimals):"]//following::input)[1]    ${GrossWeight}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${BoxLength}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[2]    ${BoxWidth}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${BoxHeigth}
+    Wait for x seconds    1s
+    Fill Text    //div[contains(@class, "mx-name-textBox17 mx-textbox form-group no-columns")]//child::input    ${PalletQty}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeigth}
+    Wait for x seconds    2s
 
 Logistics Data Change Request
     [Arguments]    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${InnerQty}    ${InnerWeight}    

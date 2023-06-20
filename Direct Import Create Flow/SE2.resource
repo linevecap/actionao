@@ -14,7 +14,7 @@ Supplier Enrichment 2 DI create flow
 
     Login with    sourcingagentdev    5lC(i)R@=9g?
     # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+    Task Inbox    Supplier Article Enrichment 2
     Mendix Dropdown    Is MSDS needed yes/no*    label    ${MSDS}
     Mendix Click    Submit Enrichment
     Mendix Click    OK

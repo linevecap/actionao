@@ -12,8 +12,8 @@ Resource    ../Homepage/homepage.resource
 Buying Enrichment DI repeat flow
 
     Login with    buyerdev    xGk<6Of
-    # Mendix Task Inbox    2
-    Click    (//div[contains(@class, "tr")]//child::span[contains(@class, "td-text")])[1]
+
+    Task Inbox    Buying Article Enrichment
     Mendix Click    Approve
     Mendix Click    OK
     Log out
