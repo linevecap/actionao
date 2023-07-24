@@ -9,7 +9,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Hedging DI create/repeat flow
-    
+
     Login with    treasurydev    6V/Et&6
     Mendix Click    Add hedge label & link to contracts
     Click    .mx-name-menuBar1-3[title='Manage hedge labels']

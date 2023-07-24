@@ -31,12 +31,20 @@ Start Onboarding NAS Create
     Wait for x seconds    1s
     Mendix Dropdown    Material group*    text    First Aid
     Wait for x seconds    1s
+    Relevant packaging languages
+    Wait for x seconds    1s
+    Click    (//button[text() = 'Select all'])[2]
+    Wait for x seconds    1s
+    Deselect N/A Language
+    Wait for x seconds    1s
+    Click    (//button[text() = 'Save'])[2]
+    Wait for x seconds    2s
     Click Calender New Widget    ${Month}
     Mendix Text    Expected sales per week (pcs)    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s
     Mendix Click    Submit
-    Wait for x seconds    1s
+    Wait for x seconds    5s
 
     Log out
     

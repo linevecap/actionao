@@ -17,6 +17,7 @@ Start New Onboarding repeat flow
     Mendix Click    New Onboarding
     Mendix Text    Article number    ${ArticleNumber}
     Mendix Click    Check number and continue
+    Set Browser Timeout    180s
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Quantity*    ${Quantity}
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}      

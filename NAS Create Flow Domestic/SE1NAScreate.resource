@@ -21,11 +21,6 @@ Supplier Enrichment NAS Create
     # Mendix Task Inbox    2
     Mendix Click    NAS Tasks
     Task Inbox   Supplier Enrichment 1
-    Language on packaging
-    Wait for x seconds    1s
-    Mendix Click    Select all
-    Wait for x seconds    1s
-    Save Language
     Fill Product Description    Product Specification*    ${Specification}
     # Mendix Text    Article gross weight (kg)*    ${GrossWeight}
     # Mendix Text    Article net weight (kg)*    ${NetWeight}

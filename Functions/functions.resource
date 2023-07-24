@@ -60,6 +60,9 @@ Press Left
 Language on packaging
     Click    //label[text() = "Language on packaging*"]
 
+Relevant packaging languages
+    Click    //label[text() = "Relevant packaging languages*"]
+
 Save Language        
     Click    button.mx-name-selectButton1
     
@@ -108,20 +111,23 @@ Fill Product Description
     Fill Text    (//label[text() = "${label}"]/following::textarea[1])    ${input}
 
 Click Brick        
-    Click    //div[contains(@class, "col-lg-auto col-md col")]//child::button
-    Wait for x seconds    1s
-    Click    //div[text() = "10000449 (Eerste Hulp – Accessoires)"]
+    # Click    (//div[contains(@class, "mx-name-container1 form-group")]//child::button)[1]
+    Click    (//label[text() = "Brick*"]//following::button)[1]
+    Wait for x seconds    2s
+    Click    (//div[text() = "First Aid, Health & Vitamins, Lifestyle & Other, Joints&Muscles"])[1]
 
 Selling Price
     [Arguments]    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
-    ...    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
+    ...    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
     Fill Text    (//div[text() = "NL"]//following::input)[1]    ${PriceNL}
     Fill Text    (//div[text() = "BE-VL"]//following::input)[1]    ${PriceBE-VL}
     Fill Text    (//div[text() = "BE-WL"]//following::input)[1]    ${PriceBE-WL}
     Fill Text    (//div[text() = "DE"]//following::input)[1]    ${PricDE}
     Fill Text    (//div[text() = "FR"]//following::input)[1]    ${PricFR}
     Fill Text    (//div[text() = "LU"]//following::input)[1]   ${PricLU}
-    Fill Text    (//div[text() = "AT"]//following::input)[1]    ${PricAT}
+    Fill Text    (//div[text() = "AT"]//following::input)[1]    ${PriceAT}
+    Fill Text    (//div[text() = "PL"]//following::input)[1]    ${PricePL}
+    Fill Text    (//div[text() = "CZ"]//following::input)[1]    ${PriceCZ}
     Fill Text    (//div[text() = "IT"]//following::input)[1]    ${PriceIT}
     Fill Text    (//div[text() = "ES"]//following::input)[1]    ${PriceES}
     Fill Text    (//div[text() = "SK"]//following::input)[1]    ${PriceSK}
@@ -140,7 +146,7 @@ Logistics Data
     Wait for x seconds    1s
     Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${BoxHeigth}
     Wait for x seconds    1s
-    Fill Text    (//span[text() = "Quantity*  (PC) (no decimals):"]//following::input)[1]    ${PalletQty}
+    Fill Text    //div[contains(@class, "mx-name-container15")]//child::input    ${PalletQty}
     Wait for x seconds    1s
     Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeigth}
     Wait for x seconds    2s
@@ -228,3 +234,12 @@ Logistics Data Change Request
     Wait for x seconds    1s
     Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeigth}
     Wait for x seconds    2s
+
+Input Text If Not Equal
+    [Arguments]    ${locator}    ${expected_value}    ${label}    ${input}
+    ${actual_value}    Get Text    ${locator}
+    IF    '${actual_value}' != '${expected_value}'
+        Mendix Text    ${label}    ${input}
+    ELSE
+        Skip   
+    END    

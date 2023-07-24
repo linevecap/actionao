@@ -14,7 +14,7 @@ Supplier Enrichment 1 DI create flow
     ...    ${ContentQty}    ${ContentUnit}    ${FactoryName}    ${FactoryAddress}         
     ...    ${SupplierArticleNr}    ${GrossWeight}    ${PalletQty}    ${PalletHeight}        ${Materials}
     ...    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}           
-
+    
     Login with    sourcingagentdev    5lC(i)R@=9g?
 
     Task Inbox    Supplier Article Enrichment
@@ -37,8 +37,8 @@ Supplier Enrichment 1 DI create flow
     Logistics Data DI SE1    ${GrossWeight}    ${PalletQty}    ${PalletHeight}
     Mendix Click    Add material
     Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
-    Mendix Click    Submit Enrichment
-    Mendix Click    OK
-    Log out
+    # Mendix Click    Submit Enrichment
+    # Mendix Click    OK
+    # Log out
 
     Wait for x seconds    10s

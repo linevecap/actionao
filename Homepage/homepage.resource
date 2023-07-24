@@ -21,7 +21,8 @@ Login with
 
 Log out 
     Click    (//div[contains(@class, "region-user")]//child::span)[1]    
-    Click    (//div[contains(@class, "popupmenu-menu")]//child::span)[1]
+    Click    //span[text() = "Sign out"]
+    # Click    (//div[contains(@class, "popupmenu-menu")]//child::span)[1]
     
 
 
