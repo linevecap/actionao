@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Check Quotation DI repeat flow    
-    [Arguments]    ${ArticleNumber}    ${path}    ${Supplier}    ${Quantity}    ${PricePerItem}
+    [Arguments]    ${ArticleNumber}    ${path}    ${Description}    ${Supplier}    ${Quantity}    ${PricePerItem}
     ...    ${ImportDuty}    ${AntiDump}    ${FOBPort}    ${ProdDescription}
     ...    ${CartonQty}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${AgreedPalletEff}              
 
@@ -19,16 +19,17 @@ Check Quotation DI repeat flow
     Mendix Click    Create Quotation
     Mendix Text    Article number    ${ArticleNumber}
     Mendix Click    Check number and continue
-    Set Browser Timeout    30s
+    Set Browser Timeout    90s
     Mendix Click    Add Photos
     Upload Picture    ${path}
+    Mendix Text    English Description (Max 40 characters) *    ${Description}
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Quantity*    ${Quantity}   
     Mendix Text    Price per item (USD ex. VAT)*    ${PricePerItem}
     Mendix Text    Import duty rate (%)*    ${ImportDuty}     
     Mendix Text    Anti dump duty*    ${AntiDump}
     Mendix Dropdown    FOB port*    label    ${FOBPort} 
-    Fill Text    (//li[contains(@class, "mx-name-index-0")]//child::input)[1]    Test    
+    # Fill Text    (//li[contains(@class, "mx-name-index-0")]//child::input)[1]    Test    
     Fill Product Description    Product specification*    ${ProdDescription}
     ${CurrentDate}    Get Current Date    increment=24:00:00       
     ${CurrentDate}    	Convert Date	${CurrentDate}	result_format=%d-%m-%Y

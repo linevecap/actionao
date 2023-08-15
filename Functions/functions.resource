@@ -99,12 +99,18 @@ Fill Random EAN
     Wait for x seconds    2s   
     Fill Text    (//label[text() = "EAN Code*"]//following::input)[1]    ${EAN}
     Fill Text    (//label[text() = "EAN Code*"]//following::input)[2]    Test 
+
+Fill Random EAN NAS
+    ${EAN}    FakerLibrary.Ean 13   
+    Wait for x seconds    2s   
+    Fill Text    (//label[text() = "EAN code"]//following::input)[1]    ${EAN}
+    # Fill Text    (//label[text() = "EAN Code*"]//following::input)[2]    Test 
     
 Fill Random EAN DI
     ${EAN}    FakerLibrary.Ean 13   
     Wait for x seconds    2s   
     Fill Text    (//label[text() = "EAN Code"]//following::input)[1]    ${EAN}
-    Fill Text    (//label[text() = "EAN Code"]//following::input)[2]    Test 
+    # Fill Text    (//label[text() = "EAN Code"]//following::input)[2]    Test 
 
 Fill Product Description
     [Arguments]    ${label}    ${input}    
@@ -243,3 +249,21 @@ Input Text If Not Equal
     ELSE
         Skip   
     END    
+
+VAT NAS BAE 
+    [Arguments]    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
+    ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}
+    Select Options By    (//div[text() = "NL"]//following::select)[1]    label    ${VATNL}
+    Select Options By    (//div[text() = "BE-VL"]//following::select)[1]    label    ${VATBE-VL}
+    Select Options By    (//div[text() = "BE-WL"]//following::select)[1]    label    ${VATBE-WL}
+    Select Options By    (//div[text() = "DE"]//following::select)[1]    label    ${VATDE}
+    Select Options By    (//div[text() = "FR"]//following::select)[1]    label    ${VATFR}
+    Select Options By    (//div[text() = "LU"]//following::select)[1]    label   ${VATLU}
+    Select Options By    (//div[text() = "AT"]//following::select)[1]    label    ${VATAT}
+    Select Options By    (//div[text() = "PL"]//following::select)[1]    label    ${VATPL}
+    Select Options By    (//div[text() = "CZ"]//following::select)[1]    label    ${VATCZ}
+    Select Options By    (//div[text() = "IT"]//following::select)[1]    label    ${VATIT}
+    Select Options By    (//div[text() = "ES"]//following::select)[1]    label    ${VATES}
+    Select Options By    (//div[text() = "SK"]//following::select)[1]    label    ${VATSK}
+    Select Options By    (//div[text() = "PT"]//following::select)[1]    label    ${VATPT}
+    Wait for x seconds    1s

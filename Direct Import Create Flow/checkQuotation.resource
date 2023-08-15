@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Check Quotation DI create flow    
-    [Arguments]    ${path}    ${Description}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${CountryOfProd}
+    [Arguments]    ${path}    ${Description1}    ${Description2}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${CountryOfProd}
     ...    ${HSCode}    ${ImportDuty}    ${AntiDump}    ${FOBPort}    ${ProdDescription}    ${Length}    ${Width}    ${Height}
     ...    ${ETD}    ${CartonQty}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${AgreedPalletEff}              
 
@@ -20,7 +20,8 @@ Check Quotation DI create flow
     Mendix Click    Skip check and continue  
     Mendix Click    Add Photos
     Upload Picture    ${path}
-    Mendix Text    Description (Max 40 characters) *    ${Description}
+    Mendix Text    Dutch Description (Max 40 characters)    ${Description1}
+    Mendix Text    English Description (Max 40 characters) *    ${Description2}
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Quantity*    ${Quantity}   
     Mendix Text    Price per item (USD ex. VAT)*    ${PricePerItem}
@@ -47,3 +48,4 @@ Check Quotation DI create flow
 
     Wait for x seconds    10s  
  
+

@@ -18,6 +18,7 @@ Start New Onboarding repeat flow
     Mendix Text    Article number    ${ArticleNumber}
     Mendix Click    Check number and continue
     Set Browser Timeout    180s
+    # Mendix Text    English Description (Max 40 characters) *    ${Description}
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Quantity*    ${Quantity}
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}      

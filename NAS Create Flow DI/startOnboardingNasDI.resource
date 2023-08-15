@@ -18,7 +18,6 @@ Start Onboarding NAS Create DI
     Mendix Click    NAS Tasks
     Mendix Click    Onboard Article
     Mendix Click    Skip check and continue
-    Mendix Click    Yes
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Description (Max 40 characters) *    ${Description}
     Mendix Text    Quantity*    ${Quantity}
@@ -31,8 +30,16 @@ Start Onboarding NAS Create DI
     Wait for x seconds    1s
     Mendix Dropdown    Material group*    text    First Aid
     Wait for x seconds    1s
+    Relevant packaging languages
+    Wait for x seconds    1s
+    Click    (//button[text() = 'Select all'])[2]
+    Wait for x seconds    1s
+    Deselect N/A Language
+    Wait for x seconds    1s
+    Click    (//button[text() = 'Save'])[2]
+    Wait for x seconds    2s
     Click Calender New Widget    ${Month}
-    Mendix Text    Expected sales per week (pcs)    ${SalesPerWeek}
+    Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s
     Mendix Click    Submit

@@ -9,11 +9,11 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Start Onboarding NAS Create
+Start Onboarding NAS Create QAS
     [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Quantity}    ${PricePerItem}
     ...    ${AssortmentType}    ${Month}    ${SalesPerWeek}    ${BoxQty}          
 
-    Go to the Dev environment
+    Go to the QAS environment
     Login with    ${Username}    ${Password} 
     Mendix Click    NAS Tasks
     Mendix Click    Onboard Article

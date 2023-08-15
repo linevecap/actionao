@@ -13,6 +13,7 @@ Review Quotation DI create flow
     [Arguments]        ${Month}    ${SalesPerWeek}
 # ${AssortmentType}    ${ArticleGroup}    ${MaterialCode}
 
+
     Login with    buyerdev    xGk<6Of
     # Mendix Task Inbox    2
     Task Inbox    Review Quotation

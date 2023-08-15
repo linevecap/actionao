@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0 (Python 3.10.0 on win32)" generated="20230601 11:38:16.126" rpa="false" schemaversion="3">
-<suite id="s1" name="Robot Interactive Console" source="c:\Users\sschelvi\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<robot generator="Robot 6.0 (Python 3.10.0 on win32)" generated="20230801 16:23:31.360" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\sschelvi\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
-<kw name="Start New Onboarding repeat flow">
-<arg>buyerdev</arg>
-<arg>xGk&lt;6Of</arg>
-<arg>2568955</arg>
-<arg>Meeki BV</arg>
-<arg>10000</arg>
-<arg>10</arg>
-<arg>2023</arg>
-<arg>juni</arg>
-<msg timestamp="20230601 11:38:18.143" level="FAIL">No keyword with name 'Start New Onboarding repeat flow' found.</msg>
-<status status="FAIL" starttime="20230601 11:38:18.143" endtime="20230601 11:38:18.143"/>
+<status status="PASS" starttime="20230801 16:23:31.383" endtime="20230801 16:23:35.986"/>
 </kw>
-<kw name="Supplier Enrichment 1 repeat flow">
-<arg>supplier1dev</arg>
-<arg>E~K5fKT</arg>
-<arg>No</arg>
-<arg>Test Automation RuleZ!</arg>
-<arg>Testnr</arg>
-<arg>26-06-2023</arg>
-<arg>No</arg>
-<arg>Food</arg>
-<arg>Fish</arg>
-<arg>100</arg>
-<arg>ASC</arg>
-<status status="NOT RUN" starttime="20230601 11:38:18.146" endtime="20230601 11:38:18.146"/>
-</kw>
-<status status="PASS" starttime="20230601 11:38:16.154" endtime="20230601 11:38:23.206"/>
-</kw>
-<status status="PASS" starttime="20230601 11:38:16.154" endtime="20230601 11:38:23.206"/>
+<status status="PASS" starttime="20230801 16:23:31.383" endtime="20230801 16:23:35.986"/>
 </test>
-<status status="PASS" starttime="20230601 11:38:16.130" endtime="20230601 11:38:23.207"/>
+<status status="PASS" starttime="20230801 16:23:31.362" endtime="20230801 16:23:35.987"/>
 </suite>
 <statistics>
 <total>

@@ -20,8 +20,8 @@ Start New Onboarding
     Login with    ${Username}    ${Password}    
     Mendix Click    New Onboarding
     Mendix Click    Skip check and continue
-
-    Mendix Text    Description (Max 40 characters) *    ${Description}
+    # Mendix Text    Dutch Description (Max 40 characters)    Test
+    Mendix Text    English Description (Max 40 characters) *    ${Description}
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Quantity*    ${Quantity}
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}  
