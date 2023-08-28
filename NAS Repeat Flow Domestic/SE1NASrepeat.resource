@@ -25,10 +25,10 @@ Supplier Enrichment NAS Repeat
     Mendix Click    Add Variant
     Fill Random EAN NAS   
     Wait for x seconds    1s
-    Mendix Click    Close
+    Mendix Click    Save
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
-    Mendix Click    Submit
+    Mendix Click    Submit Enrichment
     Log out
 
     Wait for x seconds    10s

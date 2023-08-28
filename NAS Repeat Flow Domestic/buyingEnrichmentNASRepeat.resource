@@ -20,7 +20,7 @@ Buying Enrichment NAS Repeat flow
     Mendix Click    NAS Tasks
     Task Inbox   Buying Enrichment
     # Click Brick
-    Mendix Dropdown    Advertising ban*    label    No 
+    # Mendix Dropdown    Advertising ban*    label    No 
     Mendix Click    Submit
     Log out
 

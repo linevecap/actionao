@@ -11,7 +11,7 @@ Resource    ../Homepage/homepage.resource
 
 Buying Enrichment QAS
     [Arguments]    ${Username}    ${Password}    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
-    ...    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
+    ...    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
 
     Login with    ${Username}    ${Password}
     Mendix Task Inbox    2
@@ -19,7 +19,7 @@ Buying Enrichment QAS
     Click    (//div[contains(@class, "mx-listview mx-name-listView3 listview-lined listview-hover mx-listview-clickable")]//child::li)[1]
     Mendix Dropdown    Advertising ban*    label    No
     Mendix Dropdown    Shelfcard size*    label    Big
-    Selling Price    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}    ${PricAT}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}    
+    Selling Price    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}    
     Mendix Click    Approve
     Mendix Click    OK
     Log out

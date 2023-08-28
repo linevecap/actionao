@@ -9,19 +9,21 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Buying Enrichment DI create flow
+Buying Enrichment NAS create flow
     [Arguments]    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
     ...    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
+    ...    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
+    ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}
 
     Login with    buyerdev    xGk<6Of
-    # Mendix Task Inbox    2
-    Task Inbox    Buying Article Enrichment
+    # Login with    ba1dev    kG\)\(q9>
+    Mendix Click    NAS Tasks
+    Task Inbox   Buying Enrichment
     Click Brick
     Mendix Dropdown    Advertising ban*    label    No
     Selling Price    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}    
-    Mendix Click    Approve
-    Mendix Click    OK
-    Wait for x seconds    5s
+    VAT NAS BAE    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}    
+    Mendix Click    Submit
     Log out
 
     Wait for x seconds    10s

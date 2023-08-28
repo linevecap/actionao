@@ -9,13 +9,13 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Buying Enrichment NAS create flow
+Buying Enrichment NAS create flow QAS
     [Arguments]    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
     ...    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
     ...    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
     ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}
 
-    Login with    buyerdev    xGk<6Of
+    Login with    buyer1@action.nl    9nT\[7cV
     # Login with    ba1dev    kG\)\(q9>
     Mendix Click    NAS Tasks
     Task Inbox   Buying Enrichment

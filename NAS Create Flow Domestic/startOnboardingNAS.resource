@@ -36,13 +36,13 @@ Start Onboarding NAS Create
     Wait for x seconds    1s
     Deselect N/A Language
     Wait for x seconds    1s
-    Click    (//button[text() = 'Save'])[2]
+    Mendix Click    Save
     Wait for x seconds    2s
     Click Calender New Widget    ${Month}
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s
-    Mendix Click    Submit
+    Mendix Click    Start Onboarding
     Wait for x seconds    2s
 
     Log out
