@@ -9,7 +9,7 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Supplier Enrichment 2 NAS Create
+Supplier Enrichment 2 NAS Create QAS
     [Arguments]    ${Username}    ${Password}    ${MSDS}    ${HSCode}
     ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${PalletQty}    ${PalletHeight}    
     

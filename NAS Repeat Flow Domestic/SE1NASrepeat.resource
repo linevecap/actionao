@@ -24,6 +24,7 @@ Supplier Enrichment NAS Repeat
     Mendix Dropdown    Article content unit*    label    ${ContentUnit}
     Mendix Click    Add Variant
     Fill Random EAN NAS   
+    Fill Text    (//span[text() = "Value"]//following::input)[1]    Red
     Wait for x seconds    1s
     Mendix Click    Save
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}

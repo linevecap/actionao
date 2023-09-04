@@ -21,8 +21,10 @@ Start Onboarding NAS Repeat
     Mendix Click    NAS Tasks
     Mendix Click    Onboard Article
     Click    (//button[text() = "Search"])[2]
+    Mendix Click    Start onboarding
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Quantity*    ${Quantity}
+    Mendix Dropdown    Sourcing type*    label    Domestic
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Mendix Text    Season Year*    ${SeasonYear}
     Click Calender New Widget    ${Month}

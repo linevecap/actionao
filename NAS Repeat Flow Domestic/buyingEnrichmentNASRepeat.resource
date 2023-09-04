@@ -15,13 +15,12 @@ Buying Enrichment NAS Repeat flow
     # ...    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
     # ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}
 
-    Go to the Dev environment
     Login with    buyerdev    xGk<6Of
     Mendix Click    NAS Tasks
     Task Inbox   Buying Enrichment
     # Click Brick
     # Mendix Dropdown    Advertising ban*    label    No 
-    Mendix Click    Submit
+    Mendix Click    Approve
     Log out
 
     Wait for x seconds    10s

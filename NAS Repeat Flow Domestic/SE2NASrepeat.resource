@@ -20,7 +20,7 @@ Supplier Enrichment 2 NAS Repeat
     Mendix Dropdown    Is MSDS needed yes/no*    label    ${MSDS}
     Mendix Dropdown Extended    HS code*    ${HSCode}
     Logistics Data    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${PalletQty}    ${PalletHeight}                
-    Mendix Click    Submit
+    Mendix Click    Submit Enrichment
     Log out
 
     Wait for x seconds    10s

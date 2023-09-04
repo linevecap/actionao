@@ -19,5 +19,5 @@ Final Check ComOps NAS Repeat
     Task Inbox    Final Article Check
     Mendix Dropdown Extended    Brand*    ${Brand}
     Mendix Dropdown    ICPE*    label    ${ICPE}
-    Mendix Click    Submit
+    Mendix Click    Approve
     Log out

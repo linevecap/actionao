@@ -29,7 +29,7 @@ Supplier Enrichment 1 repeat flow
     Mendix Click    Submit Enrichment
     Wait for x seconds    1s
     Mendix Click    Proceed
-    Wait for x seconds    1s
+    Wait for x seconds    5s
     Mendix Click    OK
     Log out
 
