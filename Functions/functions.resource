@@ -61,7 +61,8 @@ Language on packaging
     Click    //label[text() = "Language on packaging*"]
 
 Relevant packaging languages
-    Click    //label[text() = "Relevant packaging languages*"]
+    # Click    //label[text() = "Relevant packaging languages*"]
+    Click    //button[contains(@class, "btn mx-button mx-referencesetselector-select-button")]
 
 Save Language        
     Click    button.mx-name-selectButton1
@@ -253,7 +254,7 @@ Input Text If Not Equal
 VAT NAS BAE 
     [Arguments]    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
     ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}
-    Select Options By    (//div[text() = "NL"]//following::select)[1]    label    ${VATNL}
+    Select Options By    (//div[contains(@class,  "col-lg-2 col-md-2 col")]//following::select)[1]    label    ${VATNL}
     Select Options By    (//div[text() = "BE-VL"]//following::select)[1]    label    ${VATBE-VL}
     Select Options By    (//div[text() = "BE-WL"]//following::select)[1]    label    ${VATBE-WL}
     Select Options By    (//div[text() = "DE"]//following::select)[1]    label    ${VATDE}

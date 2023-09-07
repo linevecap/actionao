@@ -27,3 +27,6 @@ Buying Enrichment NAS create flow
     Log out
 
     Wait for x seconds    10s
+
+
+    # VAT 21,00    21,00    21,00    19,00    20,00    16,00    20,00    23,00    21,00    22,00    21,00    19,00    23,00
