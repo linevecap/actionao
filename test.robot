@@ -65,9 +65,9 @@ Happy domestic create flow
     Start New Onboarding    buyerdev    xGk<6Of    Test Automation article 5/9    Meeki BV    10000    10    Season    Halloween    2023    september    100    12
     Supplier Enrichment 1    supplier1dev    E~K5fKT    No    Test Automation RuleZ!    10    7    5    5    5    1    LTR    China    Testnr    26-09-2023    Natural fabric    Cotton    100    Not Applicable
     Buying Enrichment    ba1dev    wf<4G\[g    Test Automation article 5/9 NL    2    4    6    8    10    12    11    9    10    10    7    5    5
-    # Buyer Approval    buyerdev    xGk<6Of    
-    # Supplier Enrichment 2    supplier1dev    E~K5fKT    No    22042123    50    9    7    3    4    500    190    
-    # Final Check ComOps    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids   
+    Buyer Approval    buyerdev    xGk<6Of    
+    Supplier Enrichment 2    supplier1dev    E~K5fKT    No    22042123    50    9    7    3    4    500    190    
+    Final Check ComOps    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids   
 
 Happy domestic repeat flow
 
@@ -79,7 +79,7 @@ Happy domestic repeat flow
 
 Happy direct import create flow
     
-    Check Quotation DI create flow    tree.jpg    Test Automation DI article 22/8    BANATOYS CO.,LIMITED    10000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    23-08-2023    50    10    10    10    5
+    Check Quotation DI create flow    tree.jpg    Test Automation DI article 8/9    BANATOYS CO.,LIMITED    150000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    23-09-2023    50    10    10    10    5
     # Review Quotation DI create flow    augustus    10000
     # Supplier Enrichment 1 DI create flow    No    10    5    1    LTR    Testfactory    Street 123    Testnr    5    1000    180    Natural fabric    Cotton    100    Not Applicable
     # Validate Classification    
@@ -119,14 +119,14 @@ Change Portal
     Director Change Approval
 
 Nas Create Flow Domestic
-    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 6/9    10000    10    Stocklots    september    100    6 
-    Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    19-09-2023
+    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 11/9    150000    10    Stocklots    september    100    6 
+    # Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    19-09-2023
     # Buying Enrichment NAS create flow    10    10    10    10    10    10    10    10    10    10    10    10    10
     # Supplier Enrichment 2 NAS Create    supplier1dev    E~K5fKT    No    2204212300    50    9    7    3    4    500    190
     # Final Check ComOps NAS Create    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids
 
 NAS Repeat Flow Domestic
-    Start Onboarding NAS Repeat    buyerdev    xGk<6Of    Meeki BV    10000    10    2023    september    100    6      10    10    10    10    10    10    10    10    10    10    10    10    10    
+    Start Onboarding NAS Repeat    buyerdev    xGk<6Of    Meeki BV    150000    10    2023    september    100    6      10    10    10    10    10    10    10    10    10    10    10    10    10    
     Supplier Enrichment NAS Repeat    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Testnr    29-09-2023
     # Buying Enrichment NAS Repeat flow  
     # Supplier Enrichment 2 NAS Repeat    supplier1dev    E~K5fKT    No    2204212300    50    9    7    3    4    500    190   
