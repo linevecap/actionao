@@ -9,7 +9,7 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Supplier Enrichment NAS Create
+Supplier Enrichment NAS Create QAS
     [Arguments]    ${Username}    ${Password}    ${Specification}    
     ...    ${ContentQty}    ${ContentUnit}    ${CountryOfProd}
     ...    ${GrossWeight}    ${NetWeight}    ${Length}    ${Width}    ${Height}    
@@ -37,7 +37,7 @@ Supplier Enrichment NAS Create
     Mendix Click    Add Variant
     Fill Random EAN NAS   
     Wait for x seconds    1s
-    Mendix Click    Save
+    Click    //button[text() = "Save"]
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
     Mendix Click    Submit Enrichment

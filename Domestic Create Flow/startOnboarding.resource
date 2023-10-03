@@ -46,6 +46,7 @@ Start New Onboarding
     Mendix Click    Start Onboarding
     Wait for x seconds    1s
     Mendix Click    Proceed
+    Wait for x seconds    10s
 
     Log out
     
