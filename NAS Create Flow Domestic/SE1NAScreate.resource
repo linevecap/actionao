@@ -17,7 +17,6 @@ Supplier Enrichment NAS Create
     # ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}            
     ...    ${SupplierArticleNr}    ${SohDate}    
            
-
     Login with    ${Username}    ${Password}
     # Mendix Task Inbox    2
     Mendix Click    NAS Tasks
@@ -37,6 +36,9 @@ Supplier Enrichment NAS Create
     Mendix Click    Add Variant
     Fill Random EAN NAS   
     Wait for x seconds    1s
+    Mendix Text    Article net weight*    ${NetWeight}
+    Wait for x seconds    2s
+    Fill Text    (//label[text() = "Quantity per box"]//following::input)[6]    6
     Mendix Click    Save
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
