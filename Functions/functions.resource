@@ -70,6 +70,9 @@ Save Language
 Deselect N/A Language
     Click    //div[text() = "N/A"]
 
+Deselect Other Language
+    Click    //div[text() = "Other"]
+
 Deselect N/A Language QAS
     Click    //div[text() = "N/A"]
 

@@ -37,6 +37,8 @@ Supplier Enrichment 1
     Wait for x seconds    1s
     Deselect N/A Language
     Wait for x seconds    1s
+    Deselect Other Language
+    Wait for x seconds    1s
     Mendix Click    Save
     Wait for x seconds    1s
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
