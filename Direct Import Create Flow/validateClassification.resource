@@ -12,7 +12,7 @@ Resource    ../Homepage/homepage.resource
 Validate Classification
     [Arguments]    
 
-    Login with    comopsdev    TM1Gv~s
+    Login with    DirectImportSupportDev    IzG\]`LX'j5\(2
     # Mendix Task Inbox    2
     Task Inbox    Validate Classification
     Mendix Click    Submit

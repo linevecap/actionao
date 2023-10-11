@@ -30,11 +30,12 @@ Review Quotation DI create flow
     # Mendix Dropdown    Article group*    value    ${ArticleGroup}
     # Mendix Dropdown    Material group code*    value    ${MaterialCode}
     Click Calender New Widget    ${Month}    
-    Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
+    Mendix Text    Expected sales per week (pcs)    ${SalesPerWeek}
     Wait for x seconds    1s
     Mendix Click    Start Onboarding
     Wait for x seconds    1s
     Mendix Click    Proceed
+    Wait for x seconds    8s
     Log out
     
     Wait for x seconds    10s

@@ -79,23 +79,23 @@ Happy domestic repeat flow
 
 Happy direct import create flow
     
-    Check Quotation DI create flow    tree.jpg    Test Automation DI article 06/10    BANATOYS CO.,LIMITED    10000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    10-11-2023    50    10    10    10    5
-    Review Quotation DI create flow    december    500
-    # Supplier Enrichment 1 DI create flow    No    10    5    1    LTR    Testfactory    Street 123    Testnr    5    1000    180    Natural fabric    Cotton    100    Not Applicable
-    # Validate Classification    
-    # Buying Enrichment DI create flow    10    10    10    10    10    10    10    10    10    10    10    10    10
-    # Hedging DI create/repeat flow
+    Check Quotation DI create flow    tree.jpg    Test Automation DI article 11/10    BANATOYS CO.,LIMITED    10000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    10-11-2023    50    10    10    10    5
+    Review Quotation DI create flow    december    5000
+    Supplier Enrichment 1 DI create flow    No    10    5    1    LTR    Testfactory    Street 123    Testnr    5    1000    180    Natural fabric    Cotton    100    Not Applicable
+    Hedging DI create/repeat flow
+    Validate Classification    
+    Buying Enrichment DI create flow    Test Automation DI article    10    10    10    10    10    10    10    10    10    10    10    10    10
     # Supplier Enrichment 2 DI create flow    No    
     # Final Check ComOps DI create flow    Adidas    1450 - Highly flammable solids        
 
 Happy direct import repeat flow
     
     Check Quotation DI repeat flow    2568955    tree.jpg    fleuril    PLAYGO TOYS ENTERPRISES LTD.    10000    10    10    10    Bangkok    Test Automation RuleZ!    50    10    10    10    5
-    # Review Quotation DI repeat flow    2023    september    10000
-    # Supplier Enrichment 1 DI repeat flow    No    Testnr    No    Testfactory    Street 123    40    2,4    10    15    20    400    190    Natural fabric    Cotton    100    Not Applicable
-    # Validate Classification 
+    Review Quotation DI repeat flow    2023    september    10000
+    Supplier Enrichment 1 DI repeat flow    No    Testnr    No    Testfactory    Street 123    40    2,4    10    15    20    400    190    Natural fabric    Cotton    100    Not Applicable
+    Hedging DI create/repeat flow
+    Validate Classification 
     # Buying Enrichment DI repeat flow    
-    # Hedging DI create/repeat flow
     # Final Check ComOps DI repeat flow
 
 Regression test create domestic QAS
