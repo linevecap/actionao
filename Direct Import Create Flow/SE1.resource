@@ -33,6 +33,8 @@ Supplier Enrichment 1 DI create flow
     Wait for x seconds    1s
     Deselect N/A Language
     Wait for x seconds    1s
+    Deselect Other Language
+    Wait for x seconds    1s
     Save Language
     Mendix Text    Factory name*    ${FactoryName}
     Mendix Text    Factory address*    ${FactoryAddress}       

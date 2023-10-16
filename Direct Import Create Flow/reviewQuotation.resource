@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Review Quotation DI create flow
-    [Arguments]        ${Month}    ${SalesPerWeek}
+    [Arguments]        ${Month}    ${Year}    ${SalesPerWeek}
 # ${AssortmentType}    ${ArticleGroup}    ${MaterialCode}
 
 
@@ -29,8 +29,8 @@ Review Quotation DI create flow
     # Mendix Dropdown    Assortment type*    label    ${AssortmentType}   
     # Mendix Dropdown    Article group*    value    ${ArticleGroup}
     # Mendix Dropdown    Material group code*    value    ${MaterialCode}
-    Click Calender New Widget    ${Month}    
-    Mendix Text    Expected sales per week (pcs)    ${SalesPerWeek}
+    Click Calender New Widget    ${Month}    ${Year}    
+    Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Wait for x seconds    1s
     Mendix Click    Start Onboarding
     Wait for x seconds    1s

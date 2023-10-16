@@ -1,161 +1,131 @@
-{"level":30,"time":"2023-10-11T08:21:31.619Z","pid":5228,"hostname":"nlleq0413001646","msg":"Listening on 56194"}
-{"level":30,"time":"2023-10-11T08:21:31.761Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-10-11T08:21:31.762Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-10-11T08:21:31.765Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-10-11T08:21:31.765Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-10-11T08:21:31.773Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2023-10-11T08:21:32.786Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method newBrowser"}
-{"level":30,"time":"2023-10-11T08:21:32.790Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method newContext"}
-{"level":30,"time":"2023-10-11T08:21:32.790Z","pid":5228,"hostname":"nlleq0413001646","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2023-10-11T08:21:32.790Z","pid":5228,"hostname":"nlleq0413001646","msg":"Trace file: "}
-{"level":30,"time":"2023-10-11T08:21:32.802Z","pid":5228,"hostname":"nlleq0413001646","msg":"Changed active context"}
-{"level":30,"time":"2023-10-11T08:21:32.802Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method newContext"}
-{"level":30,"time":"2023-10-11T08:21:32.806Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method newPage"}
-{"level":30,"time":"2023-10-11T08:21:32.806Z","pid":5228,"hostname":"nlleq0413001646","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2023-10-11T08:21:33.092Z","pid":5228,"hostname":"nlleq0413001646","msg":"Video path: undefined"}
-{"level":30,"time":"2023-10-11T08:21:33.092Z","pid":5228,"hostname":"nlleq0413001646","msg":"Changed active page"}
-{"level":30,"time":"2023-10-11T08:21:33.593Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method newPage"}
-{"level":30,"time":"2023-10-11T08:21:33.597Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method setViewportSize"}
-{"level":30,"time":"2023-10-11T08:21:33.605Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method setViewportSize"}
-{"level":30,"time":"2023-10-11T08:21:33.612Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:33.612Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#usernameInput in page."}
-{"level":30,"time":"2023-10-11T08:21:33.657Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:33.660Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:33.660Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#passwordInput in page."}
-{"level":30,"time":"2023-10-11T08:21:33.675Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:33.679Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:33.679Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with button#loginButton in page."}
-{"level":30,"time":"2023-10-11T08:21:33.730Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:33.734Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:33.735Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"NAS Tasks\"] in page."}
-{"level":30,"time":"2023-10-11T08:21:36.410Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:36.414Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:36.414Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"Onboard Article\"] in page."}
-{"level":30,"time":"2023-10-11T08:21:39.644Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:39.646Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:39.646Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//button[text() = \"Search\"])[2] in page."}
-{"level":30,"time":"2023-10-11T08:21:39.875Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:39.878Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:39.878Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"Start onboarding\"] in page."}
-{"level":30,"time":"2023-10-11T08:21:48.398Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:48.401Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:48.402Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Supplier*\"]/following::span[text() = \"Select an item from the dropdown..\"])[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:52.647Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:52.651Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:52.651Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //label[text() = \"Supplier*\"]/following::span[contains(@class, \"search\")]/input in page."}
-{"level":30,"time":"2023-10-11T08:21:52.684Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:52.687Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:52.687Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //label[text() = \"Supplier*\"]/following::span[contains(@class, \"results\")]//div[text() = \"Meeki BV\"] in page."}
-{"level":30,"time":"2023-10-11T08:21:52.832Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:52.837Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:52.837Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Quantity*\"]/following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:52.924Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:52.929Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:21:52.930Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Sourcing type*\"]/following::select)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:52.977Z","pid":5228,"hostname":"nlleq0413001646","msg":"Option entries: 3"}
-{"level":30,"time":"2023-10-11T08:21:52.978Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:21:52.978Z","pid":5228,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
-{"level":30,"time":"2023-10-11T08:21:52.981Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:52.981Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Price per item (EUR ex. VAT)*\"]/following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:53.036Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:53.038Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:21:53.038Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//p[text() = \"Selected Variant defining characteristics (VDC):\"]//following::select)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:53.067Z","pid":5228,"hostname":"nlleq0413001646","msg":"Option entries: 13"}
-{"level":30,"time":"2023-10-11T08:21:53.067Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:21:53.067Z","pid":5228,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
-{"level":30,"time":"2023-10-11T08:21:53.073Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:53.073Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Season Year*\"]/following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:53.147Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:53.150Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:21:53.150Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[contains(@class, \"react-datepicker\")]//following::select)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:53.386Z","pid":5228,"hostname":"nlleq0413001646","msg":"Option entries: 12"}
-{"level":30,"time":"2023-10-11T08:21:53.386Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:21:53.386Z","pid":5228,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
-{"level":30,"time":"2023-10-11T08:21:53.389Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:53.389Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[contains(@class, \"react-datepicker\")]//following::div[contains(@class, \"day--weekend\")])[8] in page."}
-{"level":30,"time":"2023-10-11T08:21:53.551Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:53.554Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:53.554Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Expected sales per week (pcs)*\"]/following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:53.593Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:53.597Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:53.597Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Agreed (inner) box quantity*\"]/following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:53.635Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.639Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.639Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"NL\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.662Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.665Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.665Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"BE-VL\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.712Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.714Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.714Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"BE-WL\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.739Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.742Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.742Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"DE\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.767Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.770Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.770Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"FR\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.793Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.796Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.796Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"LU\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.821Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.824Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.824Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"AT\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.846Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.848Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.848Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"PL\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.871Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.874Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.874Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"CZ\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.897Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.899Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.900Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"IT\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.921Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.923Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.923Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"ES\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.947Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.950Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.950Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"SK\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:55.974Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.977Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:55.977Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[text() = \"PT\"]//following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:21:56.002Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:21:57.007Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:57.007Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"Start Onboarding\"] in page."}
-{"level":30,"time":"2023-10-11T08:21:57.062Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:21:59.066Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:21:59.066Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[contains(@class, \"region-user\")]//child::span)[1] in page."}
-{"level":30,"time":"2023-10-11T08:22:02.242Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:22:02.245Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:22:02.245Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //span[text() = \"Sign out\"] in page."}
-{"level":30,"time":"2023-10-11T08:22:02.296Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:22:02.301Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:02.301Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#usernameInput in page."}
-{"level":30,"time":"2023-10-11T08:22:03.210Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:03.212Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:03.213Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#passwordInput in page."}
-{"level":30,"time":"2023-10-11T08:22:03.224Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:03.227Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:22:03.227Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with button#loginButton in page."}
-{"level":30,"time":"2023-10-11T08:22:03.261Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:22:03.264Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:22:03.264Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"NAS Tasks\"] in page."}
-{"level":30,"time":"2023-10-11T08:22:05.639Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:22:05.642Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:22:05.642Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//span[text() = \"Supplier Enrichment 1\"])[1] in page."}
-{"level":30,"time":"2023-10-11T08:22:07.535Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:22:07.538Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:07.538Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Product Specification*\"]/following::textarea[1]) in page."}
-{"level":30,"time":"2023-10-11T08:22:09.210Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:09.212Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:09.212Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Article content quantity*\"]/following::input)[1] in page."}
-{"level":30,"time":"2023-10-11T08:22:09.238Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:09.241Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:22:09.241Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Article content unit*\"]/following::select)[1] in page."}
-{"level":30,"time":"2023-10-11T08:22:09.263Z","pid":5228,"hostname":"nlleq0413001646","msg":"Option entries: 6"}
-{"level":30,"time":"2023-10-11T08:22:09.263Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
-{"level":30,"time":"2023-10-11T08:22:09.263Z","pid":5228,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
-{"level":30,"time":"2023-10-11T08:22:09.267Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method click"}
-{"level":30,"time":"2023-10-11T08:22:09.267Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"Add Variant\"] in page."}
-{"level":30,"time":"2023-10-11T08:22:10.780Z","pid":5228,"hostname":"nlleq0413001646","msg":"End of node method click"}
-{"level":30,"time":"2023-10-11T08:22:12.786Z","pid":5228,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-10-11T08:22:12.786Z","pid":5228,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"EAN code\"]//following::input)[1] in page."}
+{"level":30,"time":"2023-10-16T13:19:54.753Z","pid":13220,"hostname":"nlleq0413001646","msg":"Listening on 61087"}
+{"level":30,"time":"2023-10-16T13:19:54.852Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-16T13:19:54.853Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-16T13:19:54.855Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-16T13:19:54.856Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-16T13:19:54.863Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-10-16T13:19:56.109Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-10-16T13:19:56.112Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-10-16T13:19:56.113Z","pid":13220,"hostname":"nlleq0413001646","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-16T13:19:56.113Z","pid":13220,"hostname":"nlleq0413001646","msg":"Trace file: "}
+{"level":30,"time":"2023-10-16T13:19:56.124Z","pid":13220,"hostname":"nlleq0413001646","msg":"Changed active context"}
+{"level":30,"time":"2023-10-16T13:19:56.124Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method newContext"}
+{"level":30,"time":"2023-10-16T13:19:56.128Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-10-16T13:19:56.128Z","pid":13220,"hostname":"nlleq0413001646","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-16T13:19:56.418Z","pid":13220,"hostname":"nlleq0413001646","msg":"Video path: undefined"}
+{"level":30,"time":"2023-10-16T13:19:56.418Z","pid":13220,"hostname":"nlleq0413001646","msg":"Changed active page"}
+{"level":30,"time":"2023-10-16T13:19:56.858Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method newPage"}
+{"level":30,"time":"2023-10-16T13:19:56.863Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2023-10-16T13:19:56.873Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2023-10-16T13:19:56.880Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:19:56.880Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#usernameInput in page."}
+{"level":30,"time":"2023-10-16T13:19:56.925Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:19:56.928Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:19:56.928Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#passwordInput in page."}
+{"level":30,"time":"2023-10-16T13:19:56.941Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:19:56.945Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:19:56.945Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with button#loginButton in page."}
+{"level":30,"time":"2023-10-16T13:19:57.059Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:19:57.064Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:19:57.064Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"NAS Tasks\"] in page."}
+{"level":30,"time":"2023-10-16T13:19:59.739Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:19:59.743Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:19:59.743Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"Onboard Article\"] in page."}
+{"level":30,"time":"2023-10-16T13:20:00.215Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:00.219Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:00.219Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"Skip check and continue\"] in page."}
+{"level":30,"time":"2023-10-16T13:20:00.358Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:00.362Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:00.362Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Supplier*\"]/following::span[text() = \"Select an item from the dropdown..\"])[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:08.605Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:08.610Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:08.610Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //label[text() = \"Supplier*\"]/following::span[contains(@class, \"search\")]/input in page."}
+{"level":30,"time":"2023-10-16T13:20:08.653Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:08.656Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:08.656Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //label[text() = \"Supplier*\"]/following::span[contains(@class, \"results\")]//div[text() = \"Kapimex B.V.\"] in page."}
+{"level":30,"time":"2023-10-16T13:20:08.789Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:08.794Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:08.794Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Description (Max 40 characters) *\"]/following::input)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:08.843Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:08.847Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:08.847Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Quantity*\"]/following::input)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:08.877Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:08.882Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:08.883Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Sourcing type*\"]/following::select)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:08.915Z","pid":13220,"hostname":"nlleq0413001646","msg":"Option entries: 3"}
+{"level":30,"time":"2023-10-16T13:20:08.915Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:08.915Z","pid":13220,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-10-16T13:20:08.920Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:08.920Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Price per item (EUR ex. VAT)*\"]/following::input)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:09.064Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:09.069Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:09.069Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Assortment type*\"]/following::select)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:09.243Z","pid":13220,"hostname":"nlleq0413001646","msg":"Option entries: 6"}
+{"level":30,"time":"2023-10-16T13:20:09.244Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:09.244Z","pid":13220,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-10-16T13:20:09.249Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:09.249Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Category*\"]/following::select)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:09.288Z","pid":13220,"hostname":"nlleq0413001646","msg":"Option entries: 17"}
+{"level":30,"time":"2023-10-16T13:20:09.288Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:09.288Z","pid":13220,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-10-16T13:20:10.292Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:10.292Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Article group*\"]/following::select)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:10.405Z","pid":13220,"hostname":"nlleq0413001646","msg":"Option entries: 7"}
+{"level":30,"time":"2023-10-16T13:20:10.405Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:10.405Z","pid":13220,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-10-16T13:20:11.412Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:11.412Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Material group*\"]/following::select)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:11.440Z","pid":13220,"hostname":"nlleq0413001646","msg":"Option entries: 6"}
+{"level":30,"time":"2023-10-16T13:20:11.440Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:11.440Z","pid":13220,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-10-16T13:20:12.446Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:12.446Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[contains(@class, \"btn mx-button mx-referencesetselector-select-button\")] in page."}
+{"level":30,"time":"2023-10-16T13:20:12.517Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:13.527Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:13.527Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//button[text() = 'Select all'])[2] in page."}
+{"level":30,"time":"2023-10-16T13:20:13.574Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:14.585Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:14.585Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //div[text() = \"N/A\"] in page."}
+{"level":30,"time":"2023-10-16T13:20:14.641Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:15.646Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:15.646Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = 'Save'] in page."}
+{"level":30,"time":"2023-10-16T13:20:15.709Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:17.715Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:17.715Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[contains(@class, \"react-datepicker\")]//following::select)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:17.786Z","pid":13220,"hostname":"nlleq0413001646","msg":"Option entries: 12"}
+{"level":30,"time":"2023-10-16T13:20:17.786Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:17.786Z","pid":13220,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-10-16T13:20:17.790Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:17.790Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[contains(@class, \"react-datepicker\")]//following::select)[2] in page."}
+{"level":30,"time":"2023-10-16T13:20:17.844Z","pid":13220,"hostname":"nlleq0413001646","msg":"Option entries: 11"}
+{"level":30,"time":"2023-10-16T13:20:17.844Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-10-16T13:20:17.844Z","pid":13220,"hostname":"nlleq0413001646","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-10-16T13:20:17.847Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:17.847Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[contains(@class, \"react-datepicker\")]//following::div[contains(@class, \"day--weekend\")])[8] in page."}
+{"level":30,"time":"2023-10-16T13:20:18.043Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:18.049Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:18.049Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Expected sales per week (pcs)*\"]/following::input)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:18.071Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:18.078Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:18.079Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//label[text() = \"Agreed (inner) box quantity*\"]/following::input)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:18.136Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:20.141Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:20.141Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"Start Onboarding\"] in page."}
+{"level":30,"time":"2023-10-16T13:20:20.219Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:22.225Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:22.225Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with (//div[contains(@class, \"region-user\")]//child::span)[1] in page."}
+{"level":30,"time":"2023-10-16T13:20:27.615Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:27.619Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:27.620Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //span[text() = \"Sign out\"] in page."}
+{"level":30,"time":"2023-10-16T13:20:27.679Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:27.684Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:27.684Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#usernameInput in page."}
+{"level":30,"time":"2023-10-16T13:20:29.260Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:29.264Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:29.264Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with input#passwordInput in page."}
+{"level":30,"time":"2023-10-16T13:20:29.273Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method fillText"}
+{"level":30,"time":"2023-10-16T13:20:29.275Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:29.275Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with button#loginButton in page."}
+{"level":30,"time":"2023-10-16T13:20:29.322Z","pid":13220,"hostname":"nlleq0413001646","msg":"End of node method click"}
+{"level":30,"time":"2023-10-16T13:20:29.326Z","pid":13220,"hostname":"nlleq0413001646","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-16T13:20:29.326Z","pid":13220,"hostname":"nlleq0413001646","msg":"Strict mode is enabled, find Locator with //button[text() = \"NAS Tasks\"] in page."}

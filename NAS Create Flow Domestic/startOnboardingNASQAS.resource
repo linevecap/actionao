@@ -11,7 +11,7 @@ Resource    ../Homepage/homepage.resource
 
 Start Onboarding NAS Create QAS
     [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Quantity}    ${PricePerItem}
-    ...    ${AssortmentType}    ${Month}    ${SalesPerWeek}    ${BoxQty}          
+    ...    ${AssortmentType}    ${Month}    ${Year}    ${SalesPerWeek}    ${BoxQty}          
 
     Go to the QAS environment
     Login with    ${Username}    ${Password} 
@@ -38,7 +38,7 @@ Start Onboarding NAS Create QAS
     Wait for x seconds    1s
     Click    //button[text() = 'Save']
     Wait for x seconds    2s
-    Click Calender New Widget    ${Month}
+    Click Calender New Widget    ${Month}    ${Year}
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s

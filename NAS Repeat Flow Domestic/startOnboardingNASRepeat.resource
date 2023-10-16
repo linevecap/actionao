@@ -11,7 +11,7 @@ Resource    ../Homepage/homepage.resource
 
 Start Onboarding NAS Repeat
     [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${VDC}
-    ...    ${SeasonYear}    ${Month}    ${SalesPerWeek}    ${BoxQty}    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
+    ...    ${SeasonYear}    ${Month}    ${Year}    ${SalesPerWeek}    ${BoxQty}    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
     ...    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
     # ...    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
     # ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}          
@@ -28,7 +28,7 @@ Start Onboarding NAS Repeat
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Select Options By    (//p[text() = "Selected Variant defining characteristics (VDC):"]//following::select)[1]    label    ${VDC}
     Mendix Text    Season Year*    ${SeasonYear}
-    Click Calender New Widget    ${Month}
+    Click Calender New Widget    ${Month}    ${Year}
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s

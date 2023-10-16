@@ -14,7 +14,7 @@ Resource    ../Homepage/homepage.resource
 Start New Onboarding
     [Arguments]    ${Username}    ${Password}    ${Description}    ${Supplier}    ${Quantity}    ${PricePerItem}
     ...    ${AssortmentType}    ${SeasonLabel}
-    ...    ${SeasonYear}    ${Month}    ${SalesPerWeek}    ${BoxQty}              
+    ...    ${SeasonYear}    ${Month}    ${Year}    ${SalesPerWeek}    ${BoxQty}              
 
     Go to the Dev environment
     Login with    ${Username}    ${Password}    
@@ -39,7 +39,7 @@ Start New Onboarding
 
     Mendix Dropdown    Season    label    ${SeasonLabel} 
     Mendix Text    Season Year*    ${SeasonYear}    
-    Click Calender New Widget    ${Month}
+    Click Calender New Widget    ${Month}    ${Year}
     Mendix Text    Expected sales per week (pcs)    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s
