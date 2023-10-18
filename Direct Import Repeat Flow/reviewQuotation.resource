@@ -10,13 +10,14 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Review Quotation DI repeat flow
-    [Arguments]    ${SeasonYear}        ${Month}    ${Year}    ${SalesPerWeek}
-
+    [Arguments]       ${Month}    ${Year}    ${SalesPerWeek}
+    
+    Go to the Dev environment
     Login with    buyerdev    xGk<6Of
     
     Task Inbox    Review Quotation
-    Mendix Text    Season Year*    ${SeasonYear}
-    Wait for x seconds    2s
+    # Mendix Text    Season Year*    ${SeasonYear}
+    Wait for x seconds    5s
     Click Calender New Widget    ${Month}    ${Year} 
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Wait for x seconds    1s

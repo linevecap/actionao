@@ -79,7 +79,7 @@ Happy domestic repeat flow
 
 Happy direct import create flow
     
-    Check Quotation DI create flow    tree.jpg    Test Automation DI article 16/10    BANATOYS CO.,LIMITED    10000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    10-11-2023    50    10    10    10    5
+    Check Quotation DI create flow    tree.jpg    Test Automation DI article 18/10    BANATOYS CO.,LIMITED    10000    10    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    10-11-2023    50    10    10    10    5
     Review Quotation DI create flow    december    2023    500
     # Supplier Enrichment 1 DI create flow    No    10    5    1    LTR    Testfactory    Street 123    Testnr    5    1000    180    Natural fabric    Cotton    100    Not Applicable
     # Hedging DI create/repeat flow
@@ -91,7 +91,7 @@ Happy direct import create flow
 Happy direct import repeat flow
     
     Check Quotation DI repeat flow    2568955    tree.jpg    fleuril    PLAYGO TOYS ENTERPRISES LTD.    10000    10    10    10    Bangkok    Test Automation RuleZ!    50    10    10    10    5
-    Review Quotation DI repeat flow    2023    september    2023    10000
+    Review Quotation DI repeat flow    november    2023    10000
     # Supplier Enrichment 1 DI repeat flow    No    Testnr    No    Testfactory    Street 123    40    2,4    10    15    20    400    190    Natural fabric    Cotton    100    Not Applicable
     # Hedging DI create/repeat flow
     # Validate Classification 
@@ -133,8 +133,8 @@ NAS Repeat Flow Domestic
     # Final Check ComOps NAS Repeat    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids 
 
 Nas Create Flow Domestic QAS
-    Start Onboarding NAS Create QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Automation 03/10    10000    10    Stocklots    oktober    2023    100    6 
-    Supplier Enrichment NAS Create QAS    contact@supplier1.abc    s3O$M@|    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    29-11-2023
+    Start Onboarding NAS Create QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Automation 16/10    150000    10    Stocklots    oktober    2023    100    6 
+    # Supplier Enrichment NAS Create QAS    contact@supplier1.abc    s3O$M@|    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    29-11-2023
     # Buying Enrichment NAS create flow QAS    10    10    10    10    10    10    10    10    10    10    10    10    10
     # Supplier Enrichment 2 NAS Create QAS    contact@supplier1.abc    s3O$M@|    No    2204212300    50    9    7    3    4    500    190
 
