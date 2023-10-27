@@ -11,7 +11,7 @@ Resource    ../Homepage/homepage.resource
 
 Start Onboarding NAS Repeat
     [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${VDC}
-    ...    ${SeasonYear}    ${Month}    ${Year}    ${SalesPerWeek}    ${BoxQty}    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
+    ...    ${SeasonYear}    ${Month}    ${Year}    ${BoxQty}    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}
     ...    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}
     # ...    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
     # ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}          
@@ -28,14 +28,16 @@ Start Onboarding NAS Repeat
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Select Options By    (//p[text() = "Selected Variant defining characteristics (VDC):"]//following::select)[1]    label    ${VDC}
     Mendix Text    Season Year*    ${SeasonYear}
-    Click Calender New Widget    ${Month}    ${Year}
-    Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
-    Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s
+    Click Calender New Widget    ${Month}    ${Year}
+    # Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
+    Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Selling Price    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}    
     # VAT NAS BAE    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT} 
     Mendix Click    Start Onboarding
     Wait for x seconds    2s
+    # Mendix Click    Proceed
+    # Wait for x seconds    5s
 
     Log out
     

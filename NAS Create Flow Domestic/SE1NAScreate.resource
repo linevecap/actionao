@@ -43,6 +43,11 @@ Supplier Enrichment NAS Create
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
     Mendix Click    Submit Enrichment
+    Wait for x seconds    1s
+    Mendix Click    Continue
+    Wait for x seconds    1s
+    Mendix Click    OK
+    Wait for x seconds    2s
     Log out
 
     Wait for x seconds    10s
