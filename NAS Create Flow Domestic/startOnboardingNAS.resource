@@ -11,7 +11,7 @@ Resource    ../Homepage/homepage.resource
 
 Start Onboarding NAS Create
     [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Quantity}    ${PricePerItem}
-    ...    ${AssortmentType}    ${Month}    ${Year}    ${SalesPerWeek}    ${BoxQty}          
+    ...    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
 
     Go to the Dev environment
     Login with    ${Username}    ${Password} 
@@ -38,7 +38,7 @@ Start Onboarding NAS Create
     Wait for x seconds    1s
     Mendix Click    Save
     Wait for x seconds    2s
-    Click Calender New Widget    ${Month}    ${Year}
+    Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s

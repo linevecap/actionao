@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Start New Onboarding repeat flow QAS
-    [Arguments]    ${Username}    ${Password}    ${ArticleNumber}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${Month}       
+    [Arguments]    ${Username}    ${Password}    ${ArticleNumber}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${SSDMonth}    ${SSDYear}    ${SSDDay}       
 
     Go to the QAS environment
     Login with    ${Username}    ${Password}
@@ -20,7 +20,7 @@ Start New Onboarding repeat flow QAS
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    Quantity*    ${Quantity}
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}        
-    Click Calender New Widget    ${Month}
+    Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
     Wait for x seconds    2s
     Mendix Click    Start Onboarding
     Wait for x seconds    1s

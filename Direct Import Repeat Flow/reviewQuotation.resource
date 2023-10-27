@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Review Quotation DI repeat flow
-    [Arguments]       ${Month}    ${Year}    ${SalesPerWeek}
+    [Arguments]       ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}
     
     Go to the Dev environment
     Login with    buyerdev    xGk<6Of
@@ -18,7 +18,7 @@ Review Quotation DI repeat flow
     Task Inbox    Review Quotation
     # Mendix Text    Season Year*    ${SeasonYear}
     Wait for x seconds    5s
-    Click Calender New Widget    ${Month}    ${Year} 
+    Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay} 
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Wait for x seconds    1s
     Mendix Click    Start Onboarding

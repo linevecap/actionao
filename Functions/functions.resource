@@ -88,10 +88,11 @@ Click Calender 2
     Click    [aria-label='${date}']
 
 Click Calender New Widget
-    [Arguments]    ${Month}    ${Year}
+    [Arguments]    ${Month}    ${Year}    ${Day}    
     Select Options By    (//div[contains(@class, "react-datepicker")]//following::select)[1]    label    ${Month}
     Select Options By    (//div[contains(@class, "react-datepicker")]//following::select)[2]    label    ${Year}
-    Click    (//div[contains(@class, "react-datepicker")]//following::div[contains(@class, "day--weekend")])[8]
+    Click    //div[contains(@class, "0${Day}")]
+    # Click    (//div[contains(@class, "react-datepicker")]//following::div[contains(@class, "day--weekend")])[8]
 
 Fill EAN
     [Arguments]    ${EAN} 

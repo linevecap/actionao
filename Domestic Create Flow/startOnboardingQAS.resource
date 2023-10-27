@@ -11,7 +11,7 @@ Resource    ../Homepage/homepage.resource
 
 Start New Onboarding QAS
     [Arguments]    ${Username}    ${Password}    ${Description}    ${Supplier}    ${Quantity}    ${PricePerItem}
-    ...    ${AssortmentType}    ${Category}    ${ArticleGroup}    ${MaterialCode}    ${Month}    
+    ...    ${AssortmentType}    ${Category}    ${ArticleGroup}    ${MaterialCode}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    
     ...    ${SalesPerWeek}    ${BoxQty}              
 
     Go to the QAS environment
@@ -27,7 +27,7 @@ Start New Onboarding QAS
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Article group*    label    ${ArticleGroup}
     Mendix Dropdown    Material group code*    label    ${MaterialCode}
-    Click Calender New Widget    ${Month}
+    Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
     Mendix Text    Expected sales per week (pcs)    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s
