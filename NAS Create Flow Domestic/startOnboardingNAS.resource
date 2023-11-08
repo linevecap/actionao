@@ -36,6 +36,8 @@ Start Onboarding NAS Create
     Wait for x seconds    1s
     Deselect N/A Language
     Wait for x seconds    1s
+    Deselect Other Language
+    Wait for x seconds    1s
     Mendix Click    Save
     Wait for x seconds    2s
     Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
@@ -44,8 +46,10 @@ Start Onboarding NAS Create
     Wait for x seconds    2s
     Mendix Click    Start Onboarding
     Wait for x seconds    2s
-    # Mendix Click    Proceed
-    # Wait for x seconds    2s
+    Mendix Click    Proceed
+    Wait for x seconds    2s
 
     Log out
+
+    Wait for x seconds    20s
     

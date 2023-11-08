@@ -17,7 +17,6 @@ Supplier Enrichment NAS Create QAS
     # ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}            
     ...    ${SupplierArticleNr}    ${SohDate}    
            
-
     Login with    ${Username}    ${Password}
     # Mendix Task Inbox    2
     Mendix Click    NAS Tasks
@@ -41,6 +40,11 @@ Supplier Enrichment NAS Create QAS
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
     Mendix Click    Submit Enrichment
+    Wait for x seconds    1s
+    Mendix Click    Continue
+    Wait for x seconds    1s
+    Mendix Click    OK
+    Wait for x seconds    2s
     Log out
 
     Wait for x seconds    10s

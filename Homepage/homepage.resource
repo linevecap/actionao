@@ -4,6 +4,9 @@ Library    Browser
 
 *** Keywords ***
 
+Go to the local environment
+    Open Browser        https://article-onboarding-dev.cfapps.eu10.hana.ondemand.com/login.html
+    Set Viewport Size    1500    720
 
 Go to the Dev environment
     Open Browser        https://article-onboarding-dev.cfapps.eu10.hana.ondemand.com/login.html

@@ -1,42 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231027 11:43:42.923" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231101 11:34:26.362" rpa="false" schemaversion="4">
 <suite id="s1" name="Test" source="c:\Users\SSCHELVI\OneDrive - Capgemini\Documents\actionao\test.robot">
-<test id="s1-t1" name="NAS Repeat Flow Domestic" line="128">
-<kw name="Start Onboarding NAS Repeat" library="startOnboardingNASRepeat">
-<arg>buyerdev</arg>
-<arg>xGk&lt;6Of</arg>
-<arg>Meeki BV</arg>
+<test id="s1-t1" name="Nas Create Flow Domestic QAS" line="135">
+<kw name="Start Onboarding NAS Create QAS" library="startOnboardingNASQAS">
+<arg>buyer1@action.nl</arg>
+<arg>9nT\[7cV</arg>
+<arg>Kapimex B.V.</arg>
+<arg>Test Automation 1/11</arg>
 <arg>10000</arg>
-<arg>5</arg>
-<arg>Flavour</arg>
-<arg>2023</arg>
+<arg>10</arg>
+<arg>Stocklots</arg>
 <arg>november</arg>
 <arg>2023</arg>
 <arg>12</arg>
+<arg>100</arg>
 <arg>6</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<arg>10</arg>
-<kw name="Go to the Dev environment" library="homepage">
+<kw name="Go to the QAS environment" library="homepage">
 <kw name="Open Browser" library="Browser">
-<arg>https://article-onboarding-dev.cfapps.eu10.hana.ondemand.com/login.html</arg>
+<arg>https://article-onboarding-qas.cfapps.eu20.hana.ondemand.com/login.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<msg timestamp="20231027 11:43:44.262" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg timestamp="20231027 11:43:44.265" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\SSCHELVI\\OneDrive - Capgemini\\Documents\\actionao\\browser\\traces\\5af9371e-2762-4249-aa86-5d42821b0af4"}</msg>
-<msg timestamp="20231027 11:43:45.399" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\SSCHELVI\\OneDrive - Capgemini\\Documents\\actionao\\browser\\traces\\5af9371e-2762-4249-aa86-5d42821b0af4"}</msg>
-<msg timestamp="20231027 11:43:45.399" level="INFO">{
+<msg timestamp="20231101 11:34:27.755" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20231101 11:34:27.757" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\SSCHELVI\\OneDrive - Capgemini\\Documents\\actionao\\browser\\traces\\f9d548ea-5b48-4ca3-8fef-946213c4cfc3"}</msg>
+<msg timestamp="20231101 11:34:28.797" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\SSCHELVI\\OneDrive - Capgemini\\Documents\\actionao\\browser\\traces\\f9d548ea-5b48-4ca3-8fef-946213c4cfc3"}</msg>
+<msg timestamp="20231101 11:34:28.798" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": true,
   "forcedColors": "none",
@@ -51,10 +39,10 @@
     "height": 720
   }
 }</msg>
-<msg timestamp="20231027 11:43:45.417" level="INFO">Successfully created context. </msg>
-<msg timestamp="20231027 11:43:45.417" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg timestamp="20231027 11:43:46.335" level="INFO">Successfully initialized new page object and opened url: https://article-onboarding-dev.cfapps.eu10.hana.ondemand.com/login.html</msg>
-<status status="PASS" starttime="20231027 11:43:44.261" endtime="20231027 11:43:46.335"/>
+<msg timestamp="20231101 11:34:28.813" level="INFO">Successfully created context. </msg>
+<msg timestamp="20231101 11:34:28.813" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg timestamp="20231101 11:34:29.462" level="INFO">Successfully initialized new page object and opened url: https://article-onboarding-qas.cfapps.eu20.hana.ondemand.com/login.html</msg>
+<status status="PASS" starttime="20231101 11:34:27.755" endtime="20231101 11:34:29.463"/>
 </kw>
 <kw name="Set Viewport Size" library="Browser">
 <arg>1500</arg>
@@ -62,10 +50,10 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Sets current Pages viewport size to specified dimensions.</doc>
-<msg timestamp="20231027 11:43:46.350" level="INFO">Set viewport size to: [object Object]</msg>
-<status status="PASS" starttime="20231027 11:43:46.336" endtime="20231027 11:43:46.351"/>
+<msg timestamp="20231101 11:34:29.473" level="INFO">Set viewport size to: [object Object]</msg>
+<status status="PASS" starttime="20231101 11:34:29.463" endtime="20231101 11:34:29.473"/>
 </kw>
-<status status="PASS" starttime="20231027 11:43:44.261" endtime="20231027 11:43:46.351"/>
+<status status="PASS" starttime="20231101 11:34:27.754" endtime="20231101 11:34:29.473"/>
 </kw>
 <kw name="Login with" library="homepage">
 <arg>${Username}</arg>
@@ -76,8 +64,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:46.352" level="INFO">Fills the text 'buyerdev' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:46.352" endtime="20231027 11:43:46.394"/>
+<msg timestamp="20231101 11:34:29.474" level="INFO">Fills the text 'buyer1@action.nl' in the given field.</msg>
+<status status="PASS" starttime="20231101 11:34:29.474" endtime="20231101 11:34:29.511"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>input#passwordInput</arg>
@@ -85,17 +73,17 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:46.394" level="INFO">Fills the text 'xGk&lt;6Of' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:46.394" endtime="20231027 11:43:46.413"/>
+<msg timestamp="20231101 11:34:29.511" level="INFO">Fills the text '9nT[7cV' in the given field.</msg>
+<status status="PASS" starttime="20231101 11:34:29.511" endtime="20231101 11:34:29.530"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>button#loginButton</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:46.414" endtime="20231027 11:43:46.483"/>
+<status status="PASS" starttime="20231101 11:34:29.531" endtime="20231101 11:34:29.581"/>
 </kw>
-<status status="PASS" starttime="20231027 11:43:46.351" endtime="20231027 11:43:46.483"/>
+<status status="PASS" starttime="20231101 11:34:29.474" endtime="20231101 11:34:29.582"/>
 </kw>
 <kw name="Mendix Click" library="functions">
 <arg>NAS Tasks</arg>
@@ -104,9 +92,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:46.484" endtime="20231027 11:43:49.184"/>
+<status status="PASS" starttime="20231101 11:34:29.582" endtime="20231101 11:34:32.123"/>
 </kw>
-<status status="PASS" starttime="20231027 11:43:46.483" endtime="20231027 11:43:49.184"/>
+<status status="PASS" starttime="20231101 11:34:29.582" endtime="20231101 11:34:32.123"/>
 </kw>
 <kw name="Mendix Click" library="functions">
 <arg>Onboard Article</arg>
@@ -115,27 +103,20 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:49.185" endtime="20231027 11:43:49.636"/>
+<status status="PASS" starttime="20231101 11:34:32.124" endtime="20231101 11:34:32.566"/>
 </kw>
-<status status="PASS" starttime="20231027 11:43:49.185" endtime="20231027 11:43:49.636"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>(//button[text() = "Search"])[2]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:49.636" endtime="20231027 11:43:50.499"/>
+<status status="PASS" starttime="20231101 11:34:32.123" endtime="20231101 11:34:32.567"/>
 </kw>
 <kw name="Mendix Click" library="functions">
-<arg>Start onboarding</arg>
+<arg>Skip check and continue</arg>
 <kw name="Click" library="Browser">
 <arg>//button[text() = "${label}"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:50.500" endtime="20231027 11:43:53.387"/>
+<status status="PASS" starttime="20231101 11:34:32.568" endtime="20231101 11:34:32.712"/>
 </kw>
-<status status="PASS" starttime="20231027 11:43:50.499" endtime="20231027 11:43:53.388"/>
+<status status="PASS" starttime="20231101 11:34:32.568" endtime="20231101 11:34:32.713"/>
 </kw>
 <kw name="Mendix Dropdown Extended" library="functions">
 <arg>Supplier*</arg>
@@ -145,7 +126,7 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:53.389" endtime="20231027 11:43:56.750"/>
+<status status="PASS" starttime="20231101 11:34:32.713" endtime="20231101 11:34:39.542"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>//label[text() = "${label}"]/following::span[contains(@class, "search")]/input</arg>
@@ -153,337 +134,25 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:56.751" level="INFO">Fills the text 'Meeki BV' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:56.750" endtime="20231027 11:43:56.816"/>
+<msg timestamp="20231101 11:34:39.542" level="INFO">Fills the text 'Kapimex B.V.' in the given field.</msg>
+<status status="PASS" starttime="20231101 11:34:39.542" endtime="20231101 11:34:39.592"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>//label[text() = "${label}"]/following::span[contains(@class, "results")]//div[text() = "${value}"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:56.817" endtime="20231027 11:43:57.006"/>
+<status status="PASS" starttime="20231101 11:34:39.592" endtime="20231101 11:34:39.645"/>
 </kw>
-<status status="PASS" starttime="20231027 11:43:53.388" endtime="20231027 11:43:57.007"/>
+<status status="PASS" starttime="20231101 11:34:32.713" endtime="20231101 11:34:39.645"/>
 </kw>
 <kw name="Mendix Text" library="functions">
-<arg>Quantity*</arg>
-<arg>${Quantity}</arg>
+<arg>Description (Max 40 characters) *</arg>
+<arg>${Description}</arg>
 <kw name="Fill Text" library="Browser">
 <arg>(//label[text() = "${label}"]/following::input)[1]</arg>
 <arg>${input}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:57.008" level="INFO">Fills the text '10000' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:57.008" endtime="20231027 11:43:57.056"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:57.007" endtime="20231027 11:43:57.057"/>
-</kw>
-<kw name="Mendix Dropdown" library="functions">
-<arg>Sourcing type*</arg>
-<arg>label</arg>
-<arg>Domestic</arg>
-<kw name="Select Options By" library="Browser">
-<arg>(//label[text() = "${label}"]/following::select)[1]</arg>
-<arg>${attribute}</arg>
-<arg>${value}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:57.058" endtime="20231027 11:43:57.097"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:57.057" endtime="20231027 11:43:57.097"/>
-</kw>
-<kw name="Mendix Text" library="functions">
-<arg>Price per item (EUR ex. VAT)*</arg>
-<arg>${PricePerItem}</arg>
-<kw name="Fill Text" library="Browser">
-<arg>(//label[text() = "${label}"]/following::input)[1]</arg>
-<arg>${input}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:57.098" level="INFO">Fills the text '5' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:57.098" endtime="20231027 11:43:57.146"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:57.098" endtime="20231027 11:43:57.146"/>
-</kw>
-<kw name="Select Options By" library="Browser">
-<arg>(//p[text() = "Selected Variant defining characteristics (VDC):"]//following::select)[1]</arg>
-<arg>label</arg>
-<arg>${VDC}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:57.146" endtime="20231027 11:43:57.183"/>
-</kw>
-<kw name="Mendix Text" library="functions">
-<arg>Season Year*</arg>
-<arg>${SeasonYear}</arg>
-<kw name="Fill Text" library="Browser">
-<arg>(//label[text() = "${label}"]/following::input)[1]</arg>
-<arg>${input}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:57.184" level="INFO">Fills the text '2023' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:57.184" endtime="20231027 11:43:57.348"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:57.184" endtime="20231027 11:43:57.348"/>
-</kw>
-<kw name="Wait for x seconds" library="functions">
-<arg>2s</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>${seconds}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231027 11:43:59.349" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231027 11:43:57.349" endtime="20231027 11:43:59.349"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:57.348" endtime="20231027 11:43:59.349"/>
-</kw>
-<kw name="Click Calender New Widget" library="functions">
-<arg>${Month}</arg>
-<arg>${Year}</arg>
-<arg>${Day}</arg>
-<kw name="Select Options By" library="Browser">
-<arg>(//div[contains(@class, "react-datepicker")]//following::select)[1]</arg>
-<arg>label</arg>
-<arg>${Month}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:59.350" endtime="20231027 11:43:59.464"/>
-</kw>
-<kw name="Select Options By" library="Browser">
-<arg>(//div[contains(@class, "react-datepicker")]//following::select)[2]</arg>
-<arg>label</arg>
-<arg>${Year}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:59.465" endtime="20231027 11:43:59.569"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//div[contains(@class, "0${Day}")]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:43:59.570" endtime="20231027 11:43:59.694"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:59.349" endtime="20231027 11:43:59.695"/>
-</kw>
-<kw name="Mendix Text" library="functions">
-<arg>Agreed (inner) box quantity*</arg>
-<arg>${BoxQty}</arg>
-<kw name="Fill Text" library="Browser">
-<arg>(//label[text() = "${label}"]/following::input)[1]</arg>
-<arg>${input}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.696" level="INFO">Fills the text '6' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.695" endtime="20231027 11:43:59.749"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:59.695" endtime="20231027 11:43:59.750"/>
-</kw>
-<kw name="Selling Price" library="functions">
-<arg>${PriceNL}</arg>
-<arg>${PriceBE-VL}</arg>
-<arg>${PriceBE-WL}</arg>
-<arg>${PricDE}</arg>
-<arg>${PricFR}</arg>
-<arg>${PricLU}</arg>
-<arg>${PriceAT}</arg>
-<arg>${PricePL}</arg>
-<arg>${PriceCZ}</arg>
-<arg>${PriceIT}</arg>
-<arg>${PriceES}</arg>
-<arg>${PriceSK}</arg>
-<arg>${PricePT}</arg>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "NL"]//following::input)[1]</arg>
-<arg>${PriceNL}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.750" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.750" endtime="20231027 11:43:59.806"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "BE-VL"]//following::input)[1]</arg>
-<arg>${PriceBE-VL}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.807" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.807" endtime="20231027 11:43:59.861"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "BE-WL"]//following::input)[1]</arg>
-<arg>${PriceBE-WL}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.862" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.861" endtime="20231027 11:43:59.888"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "DE"]//following::input)[1]</arg>
-<arg>${PricDE}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.889" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.888" endtime="20231027 11:43:59.945"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "FR"]//following::input)[1]</arg>
-<arg>${PricFR}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.947" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.946" endtime="20231027 11:43:59.972"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "LU"]//following::input)[1]</arg>
-<arg>${PricLU}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.973" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.972" endtime="20231027 11:43:59.998"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "AT"]//following::input)[1]</arg>
-<arg>${PriceAT}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:43:59.999" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:43:59.998" endtime="20231027 11:44:00.025"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "PL"]//following::input)[1]</arg>
-<arg>${PricePL}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:44:00.027" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:44:00.026" endtime="20231027 11:44:00.055"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "CZ"]//following::input)[1]</arg>
-<arg>${PriceCZ}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:44:00.056" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:44:00.055" endtime="20231027 11:44:00.083"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "IT"]//following::input)[1]</arg>
-<arg>${PriceIT}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:44:00.084" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:44:00.084" endtime="20231027 11:44:00.109"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "ES"]//following::input)[1]</arg>
-<arg>${PriceES}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:44:00.110" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:44:00.109" endtime="20231027 11:44:00.138"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "SK"]//following::input)[1]</arg>
-<arg>${PriceSK}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:44:00.139" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:44:00.138" endtime="20231027 11:44:00.168"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>(//div[text() = "PT"]//following::input)[1]</arg>
-<arg>${PricePT}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231027 11:44:00.169" level="INFO">Fills the text '10' in the given field.</msg>
-<status status="PASS" starttime="20231027 11:44:00.168" endtime="20231027 11:44:00.199"/>
-</kw>
-<kw name="Wait for x seconds" library="functions">
-<arg>1s</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>${seconds}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231027 11:44:01.200" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231027 11:44:00.200" endtime="20231027 11:44:01.200"/>
-</kw>
-<status status="PASS" starttime="20231027 11:44:00.199" endtime="20231027 11:44:01.200"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:59.750" endtime="20231027 11:44:01.200"/>
-</kw>
-<kw name="Mendix Click" library="functions">
-<arg>Start Onboarding</arg>
-<kw name="Click" library="Browser">
-<arg>//button[text() = "${label}"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:44:01.201" endtime="20231027 11:44:01.283"/>
-</kw>
-<status status="PASS" starttime="20231027 11:44:01.201" endtime="20231027 11:44:01.283"/>
-</kw>
-<kw name="Wait for x seconds" library="functions">
-<arg>2s</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>${seconds}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231027 11:44:03.285" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231027 11:44:01.284" endtime="20231027 11:44:03.285"/>
-</kw>
-<status status="PASS" starttime="20231027 11:44:01.283" endtime="20231027 11:44:03.285"/>
-</kw>
-<kw name="Log out" library="homepage">
-<kw name="Click" library="Browser">
-<arg>(//div[contains(@class, "region-user")]//child::span)[1]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:44:03.286" endtime="20231027 11:44:04.383"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//span[text() = "Sign out"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231027 11:44:04.384" endtime="20231027 11:44:04.452"/>
-</kw>
-<status status="PASS" starttime="20231027 11:44:03.285" endtime="20231027 11:44:04.452"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:44.260" endtime="20231027 11:44:04.452"/>
-</kw>
-<status status="PASS" starttime="20231027 11:43:44.257" endtime="20231027 11:44:04.453"/>
-</test>
-<status status="PASS" starttime="20231027 11:43:42.928" endtime="20231027 11:44:04.534"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
-</suite>
-</statistics>
-<errors>
-<msg timestamp="20231027 11:43:44.262" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-</errors>
-</robot>
+<msg timestamp="20231101 11:34:39.646" level="INFO">Fills the text 'Test Automation 1/11' in the given field.</msg>

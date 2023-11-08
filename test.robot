@@ -62,11 +62,11 @@ Library    BuiltIn
 
 Happy domestic create flow
 
-    Start New Onboarding    buyerdev    xGk<6Of    Test Automation article 25/10    Meeki BV    10000    10    Season    Halloween    2023    november    2023    12    100    12
+    Start New Onboarding    buyerdev    xGk<6Of    Test Automation article 08/11    Meeki BV    10000    10    Season    Halloween    2023    november    2023    19    100    12
     Supplier Enrichment 1    supplier1dev    E~K5fKT    No    Test Automation RuleZ!    10    7    5    5    5    1    LTR    China    Testnr    26-12-2023    Natural fabric    Cotton    100    Not Applicable
     Buying Enrichment    ba1dev    o\]4I>;f    Test Automation article NL    2    4    6    8    10    12    11    9    10    10    7    5    5
     Buyer Approval    buyerdev    xGk<6Of    
-    # Supplier Enrichment 2    supplier1dev    E~K5fKT    No    22042123    50    9    7    3    4    500    190    
+    Supplier Enrichment 2    supplier1dev    E~K5fKT    No    22042123    50    9    7    3    4    500    190    
     # Final Check ComOps    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids   
 
 Happy domestic repeat flow
@@ -81,8 +81,8 @@ Happy direct import create flow
     
     Check Quotation DI create flow    tree.jpg    Test Automation DI article 25/10   BANATOYS CO.,LIMITED    50000    3,15    China    2836200000    12    14    Bombay    Test Automation RuleZ!    10    10    10    26-01-2024    50    10    10    10    5
     Review Quotation DI create flow    april    2024    14    4000
-    # Supplier Enrichment 1 DI create flow    No    10    5    1    LTR    Testfactory    Street 123    Testnr    5    1000    180    Natural fabric    Cotton    100    Not Applicable
-    # Hedging DI create/repeat flow
+    Supplier Enrichment 1 DI create flow    No    10    5    1    LTR    Testfactory    Street 123    Testnr    5    1000    180    Natural fabric    Cotton    100    Not Applicable
+    Hedging DI create/repeat flow
     # Validate Classification    
     # Buying Enrichment DI create flow    Test Automation DI article    10    10    10    10    10    10    10    10    10    10    10    10    10
     # Supplier Enrichment 2 DI create flow    No    
@@ -119,7 +119,7 @@ Change Portal
     Director Change Approval
 
 Nas Create Flow Domestic
-    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 16/10    10000    10    Stocklots    november    2023    12    100    6 
+    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 30/10    10000    10    Stocklots    november    2023    19    100    6 
     Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    19-11-2023
     Buying Enrichment NAS create flow    10    10    10    10    10    10    10    10    10    10    10    10    10
     # Supplier Enrichment 2 NAS Create    supplier1dev    E~K5fKT    No    2204212300    50    9    7    3    4    500    190
@@ -133,8 +133,8 @@ NAS Repeat Flow Domestic
     # Final Check ComOps NAS Repeat    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids 
 
 Nas Create Flow Domestic QAS
-    Start Onboarding NAS Create QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Automation 23/10    150000    10    Stocklots    november    2023    12    100    6 
-    Supplier Enrichment NAS Create QAS    contact@supplier1.abc    s3O$M@|    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    29-11-2023
+    Start Onboarding NAS Create QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Automation 1/11    10000    10    Stocklots    november    2023    12    100    6 
+    # Supplier Enrichment NAS Create QAS    contact@supplier1.abc    s3O$M@|    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    29-11-2023
     # Buying Enrichment NAS create flow QAS    10    10    10    10    10    10    10    10    10    10    10    10    10
     # Supplier Enrichment 2 NAS Create QAS    contact@supplier1.abc    s3O$M@|    No    2204212300    50    9    7    3    4    500    190
 

@@ -46,6 +46,8 @@ Start Onboarding NAS Create QAS
     Wait for x seconds    2s
     Mendix Click    Proceed
     Wait for x seconds    5s
+    Mendix Click    OK
+    Wait for x seconds    2s
 
     Log out
     
