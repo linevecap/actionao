@@ -9,21 +9,20 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Start Onboarding NAS Create QAS
-    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Currency}    ${Quantity}    ${PricePerItem}
+Start Onboarding NAS Create FU
+    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Currency}    ${PricePerItem}
     ...    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
 
-    Go to the QAS environment
+    Go to the local environment
     Login with    ${Username}    ${Password} 
     Mendix Click    NAS Tasks
     Mendix Click    Onboard Article
     Mendix Click    Skip check and continue
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    English Description (Max 40 characters) *    ${Description}
-    Mendix Dropdown    Currency*    label    ${Currency}
-    Mendix Text    Quantity*    ${Quantity}
+    # Mendix Dropdown    Currency*    label    ${Currency}
+    Mendix Text    Quantity*    0
     Mendix Text    Price per item (${Currency} ex. VAT)*    ${PricePerItem}
-    Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Category*    text    Personal Care
     Wait for x seconds    1s
@@ -35,7 +34,7 @@ Start Onboarding NAS Create QAS
     Wait for x seconds    1s
     Click    (//button[text() = 'Select all'])[2]
     Wait for x seconds    1s
-    Click    //button[text() = 'Save']
+    Mendix Click    Save
     Wait for x seconds    2s
     Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
@@ -44,9 +43,9 @@ Start Onboarding NAS Create QAS
     Mendix Click    Start Onboarding
     Wait for x seconds    2s
     Mendix Click    Proceed
-    Wait for x seconds    5s
+    Wait for x seconds    2s
 
     Log out
 
-    Wait for x seconds    30s
+    Wait for x seconds    10s
     

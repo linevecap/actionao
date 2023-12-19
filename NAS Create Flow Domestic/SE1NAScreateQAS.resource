@@ -24,8 +24,8 @@ Supplier Enrichment NAS Create QAS
     Fill Product Description    Product Specification*    ${Specification}
     Mendix Text    Article content quantity*    ${ContentQty}    
     Mendix Dropdown    Article content unit*    label    ${ContentUnit}
-    Mendix Text    Article gross weight*    ${GrossWeight}
-    Mendix Text    Article net weight*    ${NetWeight}
+    Mendix Text    Article gross weight* (KG)    ${GrossWeight}
+    Mendix Text    Article net weight* (KG)    ${NetWeight}
     Mendix Text    Article length (cm)*    ${Length}
     Mendix Text    Article width (cm)*    ${Width}
     Mendix Text    Article height (cm)*    ${Height}
@@ -36,7 +36,14 @@ Supplier Enrichment NAS Create QAS
     Mendix Click    Add Variant
     Fill Random EAN NAS   
     Wait for x seconds    1s
-    Click    //button[text() = "Save"]
+    Relevant packaging languages
+    Wait for x seconds    1s
+    Mendix Click    Select all
+    Wait for x seconds    1s
+    Click    (//button[text() = "Save"])[2]
+    Wait for x seconds    2s
+    Fill Text    (//label[text() = "Quantity per box"]//following::input)[5]    6
+    Mendix Click    Save
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   
     Mendix Click    Submit Enrichment

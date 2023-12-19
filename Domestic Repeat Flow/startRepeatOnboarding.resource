@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Start New Onboarding repeat flow
-    [Arguments]    ${Username}    ${Password}    ${ArticleNumber}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${SeasonYear}    ${SSDMonth}    ${SSDYear}    ${SSDDay}       
+    [Arguments]    ${Username}    ${Password}    ${ArticleNumber}    ${Supplier}    ${Quantity}    ${PricePerItem}    ${SSDMonth}    ${SSDYear}    ${SSDDay}       
 
     Go to the Dev environment
     Login with    ${Username}    ${Password}
@@ -23,14 +23,15 @@ Start New Onboarding repeat flow
     Mendix Text    Quantity*    ${Quantity}
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}      
     # Mendix Dropdown    Assortment type*    label    Fixed Unlimited  
-    Mendix Text    Season Year*    ${SeasonYear}
+    # Mendix Text    Season Year*    ${SeasonYear}
     Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
     Wait for x seconds    2s
     Mendix Text    Agreed (inner) box quantity    19
     Mendix Click    Start Onboarding
     Wait for x seconds    1s
     Mendix Click    Proceed
-    
+    Wait for x seconds    5s
+
     Log out
     
     Wait for x seconds    10s

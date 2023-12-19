@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Start Onboarding NAS Create
-    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Quantity}    ${PricePerItem}
+    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Currency}    ${Quantity}    ${PricePerItem}
     ...    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
 
     Go to the Dev environment
@@ -19,9 +19,10 @@ Start Onboarding NAS Create
     Mendix Click    Onboard Article
     Mendix Click    Skip check and continue
     Mendix Dropdown Extended    Supplier*    ${Supplier}
-    Mendix Text    Description (Max 40 characters) *    ${Description}
+    Mendix Text    English Description (Max 40 characters) *    ${Description}
+    # Mendix Dropdown    Currency*    label    ${Currency}
     Mendix Text    Quantity*    ${Quantity}
-    Mendix Dropdown    Sourcing type*    label    Domestic
+    Mendix Text    Price per item (${Currency} ex. VAT)*    ${PricePerItem}
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Category*    text    Personal Care
@@ -34,10 +35,6 @@ Start Onboarding NAS Create
     Wait for x seconds    1s
     Click    (//button[text() = 'Select all'])[2]
     Wait for x seconds    1s
-    Deselect N/A Language
-    Wait for x seconds    1s
-    Deselect Other Language
-    Wait for x seconds    1s
     Mendix Click    Save
     Wait for x seconds    2s
     Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
@@ -47,7 +44,7 @@ Start Onboarding NAS Create
     Mendix Click    Start Onboarding
     Wait for x seconds    2s
     Mendix Click    Proceed
-    Wait for x seconds    2s
+    Wait for x seconds    6s
 
     Log out
 

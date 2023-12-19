@@ -15,6 +15,7 @@ Buying Enrichment repeat flow
     Login with    ${Username}    ${Password}
     # Mendix Task Inbox    2
     Task Inbox    Buying Article Enrichment
+    Mendix Click    (//input[contains(@type, 'checkbox')])[13]
     Mendix Click    Ready for Buyer Approval
     Mendix Click    OK
     Log out

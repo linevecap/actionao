@@ -51,6 +51,11 @@ Resource    NAS Repeat Flow Domestic/finalCheckNASrepeat.resource
 Resource    NAS Create Flow Domestic/SE1NAScreateQAS.resource 
 Resource    NAS Create Flow Domestic/buyingEnrichmentNASCreateQAS.resource
 Resource    NAS Create Flow Domestic/SE2NAScreateQAS.resource
+Resource    NAS Create Flow Domestic/startOnboardingNASFU.resource
+Resource    NAS Create Flow Domestic/startOnboardingNASFUQAS.resource
+Resource    NAS Create Flow Domestic/finalCheckNAScreateQAS.resource
+Resource    NAS Create Flow Domestic/startOnboardingNASQASAssorti.resource
+Resource    NAS Create Flow Domestic/SE1NAScreateQASAssorti.resource
 
 Library    BuiltIn
 
@@ -62,20 +67,20 @@ Library    BuiltIn
 
 Happy domestic create flow
 
-    Start New Onboarding    buyerdev    xGk<6Of    Test Automation article 08/11    Meeki BV    10000    10    Season    Halloween    2023    november    2023    19    100    12
+    Start New Onboarding    buyerdev    xGk<6Of    Test Automation article 19/12    Meeki BV    10000    10    Season    Halloween    2023    december    2023    24    100    12
     Supplier Enrichment 1    supplier1dev    E~K5fKT    No    Test Automation RuleZ!    10    7    5    5    5    1    LTR    China    Testnr    26-12-2023    Natural fabric    Cotton    100    Not Applicable
     Buying Enrichment    ba1dev    o\]4I>;f    Test Automation article NL    2    4    6    8    10    12    11    9    10    10    7    5    5
     Buyer Approval    buyerdev    xGk<6Of    
     Supplier Enrichment 2    supplier1dev    E~K5fKT    No    22042123    50    9    7    3    4    500    190    
-    # Final Check ComOps    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids   
+    Final Check ComOps    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids   
 
 Happy domestic repeat flow
 
-    Start New Onboarding repeat flow    buyerdev    xGk<6Of    2568955    Meeki BV    10000    10    2023    november    2023    12   
-    # Supplier Enrichment 1 repeat flow    supplier1dev    E~K5fKT    No    Test Automation RuleZ!    Testnr    26-10-2023    No    20    2,124    10,213    15,15    20,212    420    190    Food    Fish    100    ASC        
-    # Buying Enrichment repeat flow    ba1dev    o\]4I>;f    
-    # Buyer Approval    buyerdev    xGk<6Of
-    # Final Check ComOps repeat flow    comopsdev    TM1Gv~s
+    Start New Onboarding repeat flow    buyerdev    xGk<6Of    2568955    Meeki BV    10000    10    december    2023    24   
+    Supplier Enrichment 1 repeat flow    supplier1dev    E~K5fKT    No    Test Automation RuleZ!    Testnr    26-12-2023    No    20    2,124    10,213    15,15    20,212    420    190    Food    Fish    100    ASC        
+    Buying Enrichment repeat flow    ba1dev    o\]4I>;f    
+    Buyer Approval    buyerdev    xGk<6Of
+    Final Check ComOps repeat flow    comopsdev    TM1Gv~s
 
 Happy direct import create flow
     
@@ -98,32 +103,19 @@ Happy direct import repeat flow
     # Buying Enrichment DI repeat flow    
     # Final Check ComOps DI repeat flow
 
-Regression test create domestic QAS
-    Start New Onboarding QAS    buyer1@action.nl    9nT\[7cV    ferrero nutella biscuits 304 g    Kapimex B.V.    4000    2,13    In/Out    Personal Care    Health & Other Cosmetics    010101    oktober    2023    12    10000    10
-    Supplier Enrichment 1 QAS    contact@supplier1.abc    s3O$M@|    No    Test Test Test    0,038    0,032    21,5    17,5    7,5    0,032    KG    France    110    Regressie    19-11-2023    Food    Palm oil    100    Not Applicable
-    # HOB Approval    hob@action.nl    Wh<9QUr  
-    # Buying Enrichment QAS    buyer1@action.nl    9nT\[7cV    5,99    5,99    5,99    5,99    5,99    5,99    5,99    5,99    5,99    5,99    5,99    5,99    5,99    
-    # Supplier Enrichment 2 QAS    contact@supplier1.abc    s3O$M@|    No    19053191    20    4,822    21,82    29    32,154    640    190  
-    # Final Check ComOps    comops@action.nl    58l\]tIr    Adidas    1510 - Storage of combustible materials, products or substances in covered warehouses   
-
-Regression test repeat domestic QAS
-    Start New Onboarding repeat flow QAS    buyer1@action.nl    9nT\[7cV    2568955    Kapimex B.V.    1000    1,4820    november    2023    12   
-    # Supplier Enrichment 1 repeat flow QAS    contact@supplier1.abc    s3O$M@|    No    Test Automation RuleZ!    regressie repeat    30-08-2023    Already provided    Other    Other    100    Not applicable        
-    # Buying Enrichment repeat flow QAS    buyer1@action.nl    9nT\[7cV    3,49
-    # Final Check ComOps repeat flow    comops@action.nl    58l\]tIr
-
 Change Portal
     Start a change request
     Buying Assistent Change Approval
     HoB Change Approval
     Director Change Approval
 
-Nas Create Flow Domestic
-    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 30/10    10000    10    Stocklots    november    2023    19    100    6 
-    Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    19-11-2023
-    Buying Enrichment NAS create flow    10    10    10    10    10    10    10    10    10    10    10    10    10
-    # Supplier Enrichment 2 NAS Create    supplier1dev    E~K5fKT    No    2204212300    50    9    7    3    4    500    190
-    # Final Check ComOps NAS Create    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids
+NAS Create Flow Domestic
+    Start Onboarding NAS Create    buyerdev    xGk<6Of    Meeki BV    Test Automation 19/12    EUR    10000    10    Stocklots    december    2023    24    100    6 
+    # Start Onboarding NAS Create FU    buyerdev    xGk<6Of    Meeki BV    Test Automation 19/12    EUR    10    Stocklots    december    2023    24    100    6 
+    Supplier Enrichment NAS Create    supplier1dev    E~K5fKT    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    19-12-2023
+    Buying Enrichment NAS create flow    Test Automation    10    10    10    10    10    10    10    10    10    10    10    10    10
+    Supplier Enrichment 2 NAS Create    supplier1dev    E~K5fKT    No    2204212300    50    9    7    3    4    500    190
+    Final Check ComOps NAS Create    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids
 
 NAS Repeat Flow Domestic
     Start Onboarding NAS Repeat    buyerdev    xGk<6Of    Meeki BV    10000    5    Flavour    2023    november    2023    12    6      10    10    10    10    10    10    10    10    10    10    10    10    10    
@@ -132,14 +124,23 @@ NAS Repeat Flow Domestic
     # Supplier Enrichment 2 NAS Repeat    supplier1dev    E~K5fKT    No    2204212300    50    9    7    3    4    500    190   
     # Final Check ComOps NAS Repeat    comopsdev    TM1Gv~s    Adidas    1450 - Highly flammable solids 
 
-Nas Create Flow Domestic QAS
-    Start Onboarding NAS Create QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Automation 1/11    10000    10    Stocklots    november    2023    12    100    6 
-    # Supplier Enrichment NAS Create QAS    contact@supplier1.abc    s3O$M@|    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    29-11-2023
-    # Buying Enrichment NAS create flow QAS    10    10    10    10    10    10    10    10    10    10    10    10    10
-    # Supplier Enrichment 2 NAS Create QAS    contact@supplier1.abc    s3O$M@|    No    2204212300    50    9    7    3    4    500    190
+NAS Create Flow Domestic QAS
+    Start Onboarding NAS Create QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Automation 19/12    EUR    10000    10    Stocklots    december    2023    24    100    6 
+    # Start Onboarding NAS Create FU QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Automation 19/12    EUR    10    Stocklots    december    2023    24    100    6 
+    Supplier Enrichment NAS Create QAS    contact@supplier1.abc    s3O$M@|    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    29-11-2023
+    Buying Enrichment NAS create flow QAS    Test Automation    10    10    10    10    10    10    10    10    10    10    10    10    10
+    Supplier Enrichment 2 NAS Create QAS    contact@supplier1.abc    s3O$M@|    No    2204212300    50    9    7    3    4    500    190
+    Final Check ComOps NAS Create QAS    comops@action.nl    58l\]tIr    Adidas    1450 - Highly flammable solids
+
+NAS Create Assorti Article QAS
+    Start Onboarding NAS Create Assorti QAS    buyer1@action.nl    9nT\[7cV    Kapimex B.V.    Test Assorti Automation 19/12    EUR    10000    10    Stocklots    Assorti    december    2023    24    100    6 
+    Supplier Enrichment NAS Create Assorti QAS    contact@supplier1.abc    s3O$M@|    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    TestVDC1    TestVDC2    TestVDC3    TestVDC1.2    TestVDC2.2    TestVDC3.2    TestVDC1.3    TestVDC2.3    TestVDC3.3    Testnr    29-11-2023
+    Buying Enrichment NAS create flow QAS    Test Automation    10    10    10    10    10    10    10    10    10    10    10    10    10
+    Supplier Enrichment 2 NAS Create QAS    contact@supplier1.abc    s3O$M@|    No    2204212300    50    9    7    3    4    500    190
+    Final Check ComOps NAS Create QAS    comops@action.nl    58l\]tIr    Adidas    1450 - Highly flammable solids
 
 NAS Create Flow Direct Import
     Start Onboarding NAS Create DI    buyerdev    xGk<6Of    Mattel Brands    Test Automation 6/9    10000    11    Stocklots    september    2023    12    100    12
     Supplier Enrichment NAS Create    sourcingagentdev    5lC(i)R@=9g?    Test Automation RuleZ!    1    LTR    Germany    5    4    10    10    10    Food    Palm oil    100    Not Applicable    Testnr    19-09-2023
-    Buying Enrichment NAS create flow    10    10    10    10    10    10    10    10    10    10    10    10    10    
+    Buying Enrichment NAS create flow   Test Automation   10    10    10    10    10    10    10    10    10    10    10    10    10    
     

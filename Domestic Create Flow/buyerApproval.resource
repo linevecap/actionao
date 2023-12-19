@@ -16,7 +16,7 @@ Buyer Approval
     Task Inbox    Buyer Article Approval
     Mendix Click    Approve and Release Contract
     Mendix Click    OK
-    Wait for x seconds    2s
+    Wait for x seconds    5s
     Log out
 
     Wait for x seconds    10s

@@ -9,9 +9,9 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Start Onboarding NAS Create QAS
+Start Onboarding NAS Create Assorti QAS
     [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Currency}    ${Quantity}    ${PricePerItem}
-    ...    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
+    ...    ${AssortmentType}    ${ArticleType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
 
     Go to the QAS environment
     Login with    ${Username}    ${Password} 
@@ -25,6 +25,14 @@ Start Onboarding NAS Create QAS
     Mendix Text    Price per item (${Currency} ex. VAT)*    ${PricePerItem}
     Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
+    Mendix Dropdown    Article type    label    ${ArticleType}
+    Wait for x seconds    1s
+    Mendix Click    Add variant defining characteristics (VDC)
+    Wait for x seconds    2s
+    Select Options By    (//p[text() = 'Selected Variant defining characteristics (VDC):']//following::select)[1]    text    Type        
+    Mendix Click    Add variant defining characteristics (VDC)
+    Wait for x seconds    2s
+    Select Options By    (//p[text() = 'Selected Variant defining characteristics (VDC):']//following::select)[2]    text    Size
     Mendix Dropdown    Category*    text    Personal Care
     Wait for x seconds    1s
     Mendix Dropdown    Article group*    text    Health & Other Cosmetics
