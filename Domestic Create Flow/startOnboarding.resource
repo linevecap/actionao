@@ -33,7 +33,7 @@ Start New Onboarding
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Category*    label    Personal Care
     Mendix Dropdown    Article group*    label    Health & Other Cosmetics
-    Wait for x seconds    1s
+    Wait for x seconds    3s
     Mendix Dropdown    Material group*    label    First Aid
     Wait for x seconds    1s
 

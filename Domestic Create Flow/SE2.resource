@@ -13,6 +13,7 @@ Supplier Enrichment 2
     [Arguments]    ${Username}    ${Password}    ${MSDS}    ${HSCode}
     ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${PalletQty}    ${PalletHeight}    
     
+    # Go to the Dev environment
     Login with    ${Username}    ${Password}
     # Mendix Task Inbox    2
     Task Inbox    Supplier Article Enrichment 2

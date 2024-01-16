@@ -19,7 +19,7 @@ Check Quotation DI create flow
     Mendix Click    Create Quotation
     Mendix Click    Skip check and continue  
     Mendix Click    Add Photos
-    Upload Picture    ${path}
+    # Upload Picture    ${path}
     Mendix Text    English Description (Max 40 characters) *    ${Description1}
     # Mendix Text    English Description (Max 40 characters) *    ${Description2}
     Mendix Dropdown Extended    Supplier*    ${Supplier}

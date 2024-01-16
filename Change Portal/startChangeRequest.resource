@@ -20,7 +20,7 @@ Start a change request
     Fill Text    (//span[text() = "Price per item (EUR)"]/following::input[1])    50
     # Fill Text    (//span[text() = "Start date price change"]/following::input[1])    20-03-2023  
     Wait for x seconds    1s  
-    Fill Text    (//span[text() = "Stock on hand date"]/following::input[1])    20-03-2023
+    Fill Text    (//span[text() = "Stock on hand date"]/following::input[1])    20-03-2024
     Logistics Data Change Request    40    5    11    12    13    20    4    10    10    10    4000    169
     Mendix Click    Submit
     Mendix Click    OK

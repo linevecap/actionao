@@ -12,6 +12,7 @@ Resource    ../Homepage/homepage.resource
 Buyer Approval
     [Arguments]    ${Username}    ${Password}
 
+    # Go to the Dev environment
     Login with    ${Username}    ${Password}
     Task Inbox    Buyer Article Approval
     Mendix Click    Approve and Release Contract

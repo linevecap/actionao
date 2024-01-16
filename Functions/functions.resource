@@ -109,8 +109,8 @@ Fill Random EAN
 Fill Random EAN NAS
     ${EAN}    FakerLibrary.Ean 13   
     Wait for x seconds    2s   
-    Fill Text    (//label[text() = "EAN code"]//following::input)[1]    ${EAN}
-    # Fill Text    (//label[text() = "EAN Code*"]//following::input)[2]    Test 
+    Fill Text    (//label[text() = "EAN code*"]//following::input)[1]    ${EAN}
+    # Fill Text    (//label[text() = "EAN code"]//following::input)[1]    ${EAN} 
     
 Fill Random EAN DI
     ${EAN}    FakerLibrary.Ean 13   

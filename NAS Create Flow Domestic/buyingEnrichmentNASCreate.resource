@@ -15,6 +15,7 @@ Buying Enrichment NAS create flow QAS
     # ...    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
     # ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}
 
+    Go to the QAS environment
     Login with    buyer1@action.nl    9nT\[7cV
     # Login with    ba1dev    kG\)\(q9>
     Mendix Click    NAS Tasks

@@ -10,6 +10,7 @@ Resource    ../Homepage/homepage.resource
 
 Hedging DI create/repeat flow
 
+    Go to the Dev environment
     Login with    DirectImportSupportDev    IzG\]`LX'j5\(2
     # Mendix Click    Add hedge label & link to contracts
     # Click    span.glyphicon-step-forward
@@ -27,14 +28,14 @@ Hedging DI create/repeat flow
     Click    .mx-name-menuBar1-3[title='Manage hedge labels']
     Click    (//div[contains(@class, "td")])[1]
     Wait for x seconds    1s
-    Mendix Click    Add hedge contract
-    Mendix Text    Value hedge    62
-    Mendix Text    Hedge contract    47
-    Mendix Text    Exchange rate per contract    5
-    ${CurrentDate}    Get Current Date
-    ${CurrentDate}    	Convert Date	${CurrentDate}	result_format=%d-%m-%Y  	    
-    Mendix Text    Hedge maturity date    ${CurrentDate}        
-    Mendix Click    Save
+    # Mendix Click    Add hedge contract
+    Mendix Text    Hedge rate    62
+    # Mendix Text    Hedge contract    47
+    # Mendix Text    Exchange rate per contract    5
+    # ${CurrentDate}    Get Current Date
+    # ${CurrentDate}    	Convert Date	${CurrentDate}	result_format=%d-%m-%Y  	    
+    # Mendix Text    Hedge maturity date    ${CurrentDate}        
+    # Mendix Click    Save
     Mendix Click    Submit
     Log out
 

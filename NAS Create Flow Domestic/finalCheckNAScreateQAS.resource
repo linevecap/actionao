@@ -20,4 +20,5 @@ Final Check ComOps NAS Create QAS
     Mendix Dropdown Extended    Brand*    ${Brand}
     Mendix Dropdown    ICPE*    label    ${ICPE}
     Mendix Click    Approve
+    Wait for x seconds    60s
     Log out

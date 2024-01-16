@@ -12,6 +12,7 @@ Resource    ../Homepage/homepage.resource
 Validate Classification
     [Arguments]    
 
+    Go to the Dev environment
     Login with    DirectImportSupportDev    IzG\]`LX'j5\(2
     # Mendix Task Inbox    2
     Task Inbox    Validate Classification

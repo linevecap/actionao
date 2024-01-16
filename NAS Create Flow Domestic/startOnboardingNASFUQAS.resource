@@ -13,7 +13,7 @@ Start Onboarding NAS Create FU QAS
     [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Currency}    ${PricePerItem}
     ...    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
 
-    Go to the local environment
+    Go to the QAS environment
     Login with    ${Username}    ${Password} 
     Mendix Click    NAS Tasks
     Mendix Click    Onboard Article

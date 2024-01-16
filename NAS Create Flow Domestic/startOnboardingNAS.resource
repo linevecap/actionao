@@ -20,10 +20,10 @@ Start Onboarding NAS Create
     Mendix Click    Skip check and continue
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    English Description (Max 40 characters) *    ${Description}
-    # Mendix Dropdown    Currency*    label    ${Currency}
     Mendix Text    Quantity*    ${Quantity}
+    Mendix Dropdown    Currency*    label    ${Currency}
     Mendix Text    Price per item (${Currency} ex. VAT)*    ${PricePerItem}
-    Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
+    # Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Category*    text    Personal Care
     Wait for x seconds    1s
@@ -48,5 +48,5 @@ Start Onboarding NAS Create
 
     Log out
 
-    Wait for x seconds    20s
+    Wait for x seconds    60s
     

@@ -9,20 +9,22 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Start Onboarding NAS Create FU
-    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Currency}    ${PricePerItem}
-    ...    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
+Start Onboarding NAS Deposit QAS
+    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Quantity}    ${PricePerItem}
+    ...    ${AssortmentType}    ${deposit quantity}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
 
-    Go to the local environment
-    Login with    ${Username}    ${Password} 
+    Go to the QAS environment
+    Login with    ${Username}    ${Password}
+    Wait for x seconds    5s 
     Mendix Click    NAS Tasks
+    Wait for x seconds    5s
     Mendix Click    Onboard Article
     Mendix Click    Skip check and continue
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    English Description (Max 40 characters) *    ${Description}
-    Mendix Dropdown    Currency*    label    ${Currency}
-    Mendix Text    Quantity*    1000
-    Mendix Text    Price per item (${Currency} ex. VAT)*    ${PricePerItem}
+    Mendix Text    Quantity*    ${Quantity}
+    Mendix Dropdown    Sourcing type*    label    Domestic
+    Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Category*    text    Personal Care
     Wait for x seconds    1s
@@ -34,8 +36,13 @@ Start Onboarding NAS Create FU
     Wait for x seconds    1s
     Click    (//button[text() = 'Select all'])[2]
     Wait for x seconds    1s
-    Mendix Click    Save
+    Deselect N/A Language
+    Wait for x seconds    1s
+    Click    //button[text() = 'Save']
+    Wait for x seconds    1s
+    Mendix Dropdown    Deposit type    text    Deposit NL bottle € 0,15
     Wait for x seconds    2s
+    Mendix Text    Deposit quantity (pcs)    ${deposit quantity}
     Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
@@ -43,9 +50,8 @@ Start Onboarding NAS Create FU
     Mendix Click    Start Onboarding
     Wait for x seconds    2s
     Mendix Click    Proceed
-    Wait for x seconds    6s
+    Wait for x seconds    10s
 
     Log out
 
-    Wait for x seconds    10s
-    
+    Wait for x seconds    120s

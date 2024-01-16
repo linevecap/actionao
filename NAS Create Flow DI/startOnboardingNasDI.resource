@@ -19,9 +19,9 @@ Start Onboarding NAS Create DI
     Mendix Click    Onboard Article
     Mendix Click    Skip check and continue
     Mendix Dropdown Extended    Supplier*    ${Supplier}
-    Mendix Text    Description (Max 40 characters) *    ${Description}
+    Mendix Text    English Description (Max 40 characters) *    ${Description}
     Mendix Text    Quantity*    ${Quantity}
-    Mendix Dropdown    Sourcing type*    label    Direct Import
+    # Mendix Dropdown    Sourcing type*    label    Direct Import
     Mendix Text    Price per item (USD ex. VAT)*    ${PricePerItem}
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Category*    text    Personal Care
@@ -34,9 +34,7 @@ Start Onboarding NAS Create DI
     Wait for x seconds    1s
     Click    (//button[text() = 'Select all'])[2]
     Wait for x seconds    1s
-    Deselect N/A Language
-    Wait for x seconds    1s
-    Click    (//button[text() = 'Save'])[2]
+    Click    (//button[text() = 'Save'])
     Wait for x seconds    2s
     Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}

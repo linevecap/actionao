@@ -13,7 +13,7 @@ Review Quotation DI create flow
     [Arguments]        ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}
 # ${AssortmentType}    ${ArticleGroup}    ${MaterialCode}
 
-
+    Go to the Dev environment
     Login with    buyerdev    xGk<6Of
     # Mendix Task Inbox    2
     Task Inbox    Review Quotation
