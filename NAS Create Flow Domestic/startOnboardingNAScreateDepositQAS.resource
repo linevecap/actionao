@@ -10,7 +10,7 @@ Resource    ../Homepage/homepage.resource
 *** Keywords ***
 
 Start Onboarding NAS Deposit QAS
-    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Quantity}    ${PricePerItem}
+    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Quantity}    ${Currency}    ${PricePerItem}
     ...    ${AssortmentType}    ${deposit quantity}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
 
     Go to the QAS environment
@@ -23,8 +23,8 @@ Start Onboarding NAS Deposit QAS
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    English Description (Max 40 characters) *    ${Description}
     Mendix Text    Quantity*    ${Quantity}
-    Mendix Dropdown    Sourcing type*    label    Domestic
-    Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
+    Mendix Dropdown    Currency*    label    ${Currency}
+    Mendix Text    Price per item (${Currency} ex. VAT)*    ${PricePerItem}
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
     Mendix Dropdown    Category*    text    Personal Care
     Wait for x seconds    1s
@@ -36,11 +36,11 @@ Start Onboarding NAS Deposit QAS
     Wait for x seconds    1s
     Click    (//button[text() = 'Select all'])[2]
     Wait for x seconds    1s
-    Deselect N/A Language
-    Wait for x seconds    1s
     Click    //button[text() = 'Save']
-    Wait for x seconds    1s
-    Mendix Dropdown    Deposit type    text    Deposit NL bottle € 0,15
+    Wait for x seconds    4s
+    Click    //*[@id="238.ArticleContracting.StartOnboarding_Details.referenceSelector4_jki_214"]
+    Wait for x seconds    2s
+    Click    Deposit NL bottle € 0,15
     Wait for x seconds    2s
     Mendix Text    Deposit quantity (pcs)    ${deposit quantity}
     Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}

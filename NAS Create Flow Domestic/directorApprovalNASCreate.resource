@@ -9,16 +9,17 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Buying Enrichment repeat flow
-    [Arguments]    ${Username}    ${Password}   
-    
+director Approval NAS Create
+    [Arguments]    ${Username}    ${Password}
+
     Go to the Dev environment
     Login with    ${Username}    ${Password}
-    # Mendix Task Inbox    2
-    Task Inbox    Buying Article Enrichment
-    Mendix Click    (//input[contains(@type, 'checkbox')])[13]
-    Mendix Click    Ready for Buyer Approval
+    Mendix Click    NAS Tasks
+    Task Inbox    Buying Director Approval
+    Mendix Click    Approve Contract
     Mendix Click    OK
+    Wait for x seconds    5s
     Log out
 
     Wait for x seconds    10s
+

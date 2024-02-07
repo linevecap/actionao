@@ -9,19 +9,15 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Validate Classification
+Validate Classification QAS
     [Arguments]    
 
-    Go to the Dev environment
-    Login with    DirectImportSupportDev    IzG\]`LX'j5\(2
-    Wait for x seconds    2s
+    Go to the QAS environment
+    Login with    DirectImportSupportQAS    v2{tf|p!qeWN
     Mendix Click    NAS Tasks
     Wait for x seconds    2s
-    # Mendix Task Inbox    2
     Task Inbox    Validate Classification
     Mendix Click    Approve
-    Mendix Click    OK
-    Wait for x seconds    2s
     Log out
 
     Wait for x seconds    10s

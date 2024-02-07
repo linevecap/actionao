@@ -19,9 +19,12 @@ Mendix Dropdown
     Select Options By    (//label[text() = "${label}"]/following::select)[1]   ${attribute}    ${value}     
 
 Mendix Dropdown Extended
-    [Arguments]    ${label}    ${value}    
+    [Arguments]    ${label}    ${value}
+    Wait for x seconds    4s    
     Click    (//label[text() = "${label}"]/following::span[text() = "Select an item from the dropdown.."])[1]
+    Wait for x seconds    2s
     Fill Text    //label[text() = "${label}"]/following::span[contains(@class, "search")]/input    ${value}    
+    Wait for x seconds    4s
     Click    //label[text() = "${label}"]/following::span[contains(@class, "results")]//div[text() = "${value}"]
 
 Mendix Task Inbox
@@ -91,7 +94,8 @@ Click Calender New Widget
     [Arguments]    ${Month}    ${Year}    ${Day}    
     Select Options By    (//div[contains(@class, "react-datepicker")]//following::select)[1]    label    ${Month}
     Select Options By    (//div[contains(@class, "react-datepicker")]//following::select)[2]    label    ${Year}
-    Click    //div[contains(@class, "0${Day}")]
+    Wait for x seconds    4s
+    Click    //div[contains(@class, "${Day}")]
     # Click    (//div[contains(@class, "react-datepicker")]//following::div[contains(@class, "day--weekend")])[8]
 
 Fill EAN
@@ -180,6 +184,21 @@ Logistics Data Repeat
     Fill Text    (//span[text() = "Height of pallet* (CM, max 190 incl pallet):"]//following::input)[1]    ${PalletHeigth}
     Wait for x seconds    2s
               
+Logistics Data DI Check Quotation NAS
+        [Arguments]    ${CartonQty}    ${CartonGrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${AgreedPalletEff}  
+    Fill Text    (//span[text() = "Quantity* (PC, max 50, no decimal):"]//following::input)[1]    ${CartonQty}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Gross weight* (KG, max 15, max 3 decimals):"]//following::input)[1]    ${CartonGrossWeight}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[1]    ${BoxLength}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[2]    ${BoxWidth}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Box size* (L x W x H) in (CM):"]//following::input)[3]    ${BoxHeight}
+    Wait for x seconds    1s
+    Fill Text    (//span[text() = "Agreed pallet efficiency* (%):"]//following::input)[1]    ${AgreedPalletEff}
+    Wait for x seconds    2s
+
 Logistics Data DI Check Quotation
         [Arguments]    ${CartonQty}    ${BoxLength}    ${BoxWidth}    ${BoxHeight}    ${AgreedPalletEff}  
     Fill Text    (//span[text() = "Quantity* (PC, max 50, no decimal):"]//following::input)[1]    ${CartonQty}

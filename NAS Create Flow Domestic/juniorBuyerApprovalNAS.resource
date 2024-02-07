@@ -9,12 +9,14 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-HOB Approval
+Junior Buyer Approval NAS Create
     [Arguments]    ${Username}    ${Password}
 
     Login with    ${Username}    ${Password}
-    Click    (//div[contains(@class, "td-custom-content")])[3]//child::span
+    Mendix Click    NAS Tasks
+    Task Inbox    Junior Buyer Approval
+    Mendix Click    Approve
     Mendix Click    OK
     Log out
 
-    Wait for x seconds    20s
+    Wait for x seconds    10s

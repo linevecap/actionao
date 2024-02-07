@@ -15,8 +15,9 @@ Buying Enrichment NAS create flow
     # ...    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}
     # ...    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}
 
-    Login with    buyerdev    xGk<6Of
+    # Login with    buyerdev    xGk<6Of
     # Login with    ba1dev    kG\)\(q9>
+    Login with    buyer3@action.nl    6,K&f>r
     Mendix Click    NAS Tasks
     Task Inbox   Buying Enrichment
     Mendix Text    Dutch Description (Max 40 characters)*    ${DescriptionNL}

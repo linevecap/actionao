@@ -16,8 +16,8 @@ Supplier Enrichment 1
     ...    ${SupplierArticleNr}    ${SohDate}    ${Materials}
     ...    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}           
 
+    Go to the Dev environment
     Login with    ${Username}    ${Password}
-
     Task Inbox    Supplier Article Enrichment
     Mendix Dropdown    All samples available*    label    ${Samples}
     Mendix Click    Add EAN

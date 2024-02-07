@@ -8,15 +8,15 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Hedging DI create/repeat flow
+Hedging DI
 
-    Go to the Dev environment
-    Login with    DirectImportSupportDev    IzG\]`LX'j5\(2
+    Go to the DEV environment
+    Login with    DirectImportSupportDev    v2{tf|p!qeWN
     # Mendix Click    Add hedge label & link to contracts
     # Click    span.glyphicon-step-forward
     # Wait for x seconds    1s
     
-    Click    ((//div[contains(@class, "navbar")])[3]//child::li)[3]
+    Click    a.mx-name-menuBar1-3[title='[NAS] Hedge contract table']
     Wait for x seconds    1s
 
     # Click top row of hedging list
@@ -36,7 +36,9 @@ Hedging DI create/repeat flow
     # ${CurrentDate}    	Convert Date	${CurrentDate}	result_format=%d-%m-%Y  	    
     # Mendix Text    Hedge maturity date    ${CurrentDate}        
     # Mendix Click    Save
-    Mendix Click    Submit
+    Mendix Click    [NAS] Submit
+    Mendix Click    Proceed
+    Mendix Click    OK
     Log out
 
     Wait for x seconds    10s

@@ -9,9 +9,11 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Supplier Enrichment NAS Create
-    [Arguments]    ${Username}    ${Password}    ${Specification}    
-    ...    ${ContentQty}    ${ContentUnit}    ${CountryOfProd}
+Supplier Enrichment Direct Import Development Item
+    [Arguments]    ${Username}    ${Password}    
+    # ...    ${Specification}    
+    ...    ${ContentQty}    ${ContentUnit}    
+    # ...    ${CountryOfProd}
     ...    ${GrossWeight}    ${NetWeight}    ${Length}    ${Width}    ${Height}    
     ...    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
     # ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}            
@@ -22,7 +24,7 @@ Supplier Enrichment NAS Create
     # Mendix Task Inbox    2
     Mendix Click    NAS Tasks
     Task Inbox   Supplier Enrichment 1
-    Fill Product Description    Product Specification*    ${Specification}
+    # Fill Product Description    Product Specification*    ${Specification}
     Mendix Text    Article content quantity*    ${ContentQty}    
     Mendix Dropdown    Article content unit*    label    ${ContentUnit}
     Mendix Text    Article gross weight* (KG)    ${GrossWeight}
@@ -30,20 +32,26 @@ Supplier Enrichment NAS Create
     Mendix Text    Article length (cm)*    ${Length}
     Mendix Text    Article width (cm)*    ${Width}
     Mendix Text    Article height (cm)*    ${Height}
-    Mendix Dropdown Extended    Country of production*    ${CountryOfProd}
+    # Mendix Dropdown Extended    Country of production*    ${CountryOfProd}
     # Logistics Data    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}
     Mendix Click    Add material
     Mendix Click Material    ${Materials}    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}
     Mendix Click    Add Variant
     Fill Random EAN NAS   
     Wait for x seconds    1s
-    Fill Text    (//label[text() = "Quantity per box*"]//following::input)[5]    6
     Relevant packaging languages
     Wait for x seconds    1s
     Mendix Click    Select all
     Wait for x seconds    1s
     Click    (//button[text() = "Save"])[2]
-    Wait for x seconds    3s
+    Wait for x seconds    2s
+    Fill Text    (//label[text() = "Quantity per box*"]//following::input)[5]    6
+    Wait for x seconds    2s
+    Mendix Click    Add Variant Defining Characteristic
+    Select Options By    (//label[text() = 'VDC']//following::select)[1]    label    Scent
+    Mendix Click    Close
+    Fill Text    (//span[text() = 'Scent']//following::input)[1]    strawberry
+    Mendix Click    Save
     Mendix Click    Save
     Mendix Text    Supplier Article Number*    ${SupplierArticleNr}
     Mendix Text    Stock On Hand Date*    ${SohDate}   

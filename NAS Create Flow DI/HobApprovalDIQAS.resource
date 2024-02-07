@@ -9,19 +9,19 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Validate Classification
-    [Arguments]    
+HOB Approval DI QAS
+    [Arguments]    ${Username}    ${Password}
 
-    Go to the Dev environment
-    Login with    DirectImportSupportDev    IzG\]`LX'j5\(2
+    Go to the QAS environment
+    Login with    ${Username}    ${Password}
     Wait for x seconds    2s
     Mendix Click    NAS Tasks
     Wait for x seconds    2s
-    # Mendix Task Inbox    2
-    Task Inbox    Validate Classification
-    Mendix Click    Approve
+    Task Inbox    HOB Approval
+    Mendix Click    Approve Contract
     Mendix Click    OK
-    Wait for x seconds    2s
+    Wait for x seconds    5s
     Log out
 
-    Wait for x seconds    10s
+    Wait for x seconds    60s
+

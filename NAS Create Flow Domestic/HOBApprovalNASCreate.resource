@@ -9,12 +9,14 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-HOB Approval
+HOB Approval NAS Create
     [Arguments]    ${Username}    ${Password}
 
     Login with    ${Username}    ${Password}
-    Click    (//div[contains(@class, "td-custom-content")])[3]//child::span
+    Mendix Click    NAS Tasks
+    Task Inbox    HOB Approval
+    Mendix Click    Approve Contract
     Mendix Click    OK
     Log out
 
-    Wait for x seconds    20s
+    Wait for x seconds    10s

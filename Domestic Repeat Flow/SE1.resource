@@ -14,7 +14,8 @@ Supplier Enrichment 1 repeat flow
     ...    ${SupplierArticleNr}    ${SohDate}    ${MSDS}    
     ...    ${CartonQty}    ${GrossWeight}    ${BoxLength}    ${BoxWidth}    ${BoxHeigth}    ${PalletQty}    ${PalletHeigth}    ${Materials}
     ...    ${SpecificMaterial}    ${PercentageOfArticle}    ${SustainabilityCertificate}           
-
+    
+    Go to the Dev environment
     Login with    ${Username}    ${Password}    
     Task Inbox    Supplier Article Enrichment
     Mendix Dropdown    All samples available*    label    ${Samples}

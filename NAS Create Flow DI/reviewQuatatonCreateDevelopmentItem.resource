@@ -9,24 +9,23 @@ Resource    ../Homepage/homepage.resource
 
 *** Keywords ***
 
-Start Onboarding NAS Create
-    [Arguments]    ${Username}    ${Password}    ${Supplier}    ${Description}    ${Currency}    ${Quantity}    ${PricePerItem}
-    ...    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}          
-
+Review Quotation Nas Create Development Item
+    [Arguments]    ${AssortmentType}    ${SSDMonth}    ${SSDYear}    ${SSDDay}    ${SalesPerWeek}    ${BoxQty}
+    
     Go to the Dev environment
-    Login with    ${Username}    ${Password} 
+    Login with    buyerdev    xGk<6Of
     Mendix Click    NAS Tasks
-    Mendix Click    Onboard Article
+    Wait for x seconds    2s
+    Task Inbox    Review Quotation   
+    # Mendix Text    Season Year*    ${SeasonYear}
+    Mendix Click    Approve Quotation
+    Wait for x seconds    2s
     Mendix Click    Skip check and continue
     Wait for x seconds    5s
-    Mendix Dropdown Extended    Supplier*    ${Supplier}
-    Mendix Text    English Description (Max 40 characters) *    ${Description}
-    Mendix Text    Quantity*    ${Quantity}
-    Mendix Dropdown    Currency*    label    ${Currency}
-    Mendix Text    Price per item (${Currency} ex. VAT)*    ${PricePerItem}
-    # Mendix Text    Price per item (EUR ex. VAT)*    ${PricePerItem}
+    Mendix Dropdown    Buyer*    text    Buyer 1
+    Check Checkbox    (//input[@type="checkbox"])[1]
     Mendix Dropdown    Assortment type*    label    ${AssortmentType}
-    Mendix Dropdown    Category*    text    Personal Care
+    # Mendix Dropdown    Category*    text    Personal Care
     Wait for x seconds    1s
     Mendix Dropdown    Article group*    text    Health & Other Cosmetics
     Wait for x seconds    1s
@@ -36,19 +35,16 @@ Start Onboarding NAS Create
     Wait for x seconds    1s
     Click    (//button[text() = 'Select all'])[2]
     Wait for x seconds    1s
-    Mendix Click    Save
+    Click    (//button[text() = 'Save'])
     Wait for x seconds    2s
-    Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay}
-    Wait for x seconds    5s
+    Click Calender New Widget    ${SSDMonth}    ${SSDYear}    ${SSDDay} 
     Mendix Text    Expected sales per week (pcs)*    ${SalesPerWeek}
     Mendix Text    Agreed (inner) box quantity*    ${BoxQty}
     Wait for x seconds    2s
     Mendix Click    Start Onboarding
-    Wait for x seconds    2s
+    Wait for x seconds    1s
     Mendix Click    Proceed
-    Wait for x seconds    6s
-
+    Wait for x seconds    4s
     Log out
-
-    Wait for x seconds    120s
     
+    Wait for x seconds    10s

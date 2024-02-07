@@ -12,6 +12,7 @@ Resource    ../Homepage/homepage.resource
 Final Check ComOps repeat flow
     [Arguments]    ${Username}    ${Password}    
 
+    Go to the Dev environment
     Login with    ${Username}    ${Password}
     Task Inbox    Final Article Check
     Mendix Click    Approve

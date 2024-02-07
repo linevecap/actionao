@@ -25,7 +25,7 @@ Buying Enrichment NAS create flow QAS
     Mendix Dropdown    Advertising ban*    label    No
     Selling Price    ${PriceNL}    ${PriceBE-VL}    ${PriceBE-WL}    ${PricDE}    ${PricFR}    ${PricLU}    ${PriceAT}    ${PricePL}    ${PriceCZ}    ${PriceIT}    ${PriceES}    ${PriceSK}    ${PricePT}    
     # VAT NAS BAE    ${VATNL}    ${VATBE-VL}    ${VATBE-WL}    ${VATDE}    ${VATFR}    ${VATLU}    ${VATAT}    ${VATPL}    ${VATCZ}    ${VATIT}    ${VATES}    ${VATSK}    ${VATPT}    
-    Select Options By    (//div[text() = 'LU']//following::select)[1]    label    16,00
+    Select Options By    (//div[text() = 'LU']//following::select)[1]    label    17,00
     Mendix Click    Approve
     Log out
 

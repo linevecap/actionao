@@ -12,6 +12,7 @@ Resource    ../Homepage/homepage.resource
 Supplier Enrichment 2 DI create flow
     [Arguments]    ${MSDS}        
 
+    Go to the Dev environment
     Login with    sourcingagentdev    5lC(i)R@=9g?
     # Mendix Task Inbox    2
     Task Inbox    Supplier Article Enrichment 2

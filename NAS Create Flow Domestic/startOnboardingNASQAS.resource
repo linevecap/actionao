@@ -18,6 +18,7 @@ Start Onboarding NAS Create QAS
     Mendix Click    NAS Tasks
     Mendix Click    Onboard Article
     Mendix Click    Skip check and continue
+    Wait for x seconds    5s
     Mendix Dropdown Extended    Supplier*    ${Supplier}
     Mendix Text    English Description (Max 40 characters) *    ${Description}
     Mendix Dropdown    Currency*    label    ${Currency}

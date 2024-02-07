@@ -1,6 +1,7 @@
 *** Settings ***
 
 Library    Browser
+Resource    ../Functions/functions.resource
 
 *** Keywords ***
 
@@ -23,7 +24,8 @@ Login with
     Click    button#loginButton
 
 Log out 
-    Click    (//div[contains(@class, "region-user")]//child::span)[1]    
+    Click    (//div[contains(@class, "region-user")]//child::span)[1]
+    Wait for x seconds    4s    
     Click    //span[text() = "Sign out"]
     # Click    (//div[contains(@class, "popupmenu-menu")]//child::span)[1]
     
